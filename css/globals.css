@@ -3,8 +3,10 @@
   --font-titillium-web: "Titillium Web";
 
   /* font sizes */
-  --font-size-base: 8px;
-  --font-size-lg: 12px;
+  --font-size-xs:15px;
+  --font-size-sm: 20px;
+  --font-size-base:25px;
+  --font-size-lg: 30px;
 
   /* Colors */
   --color-white: #fff;

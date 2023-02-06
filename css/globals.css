@@ -1,0 +1,33 @@
+:root {
+  /* fonts */
+  --font-titillium-web: "Titillium Web";
+
+  /* font sizes */
+  --font-size-base: 8px;
+  --font-size-lg: 12px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-gray-100: #2d2715;
+  --color-gray-200: #1d1d1d;
+  --color-black: #000;
+  --color-darkorange: #fd961a;
+
+  /* Gaps */
+  --gap-md: 8px;
+
+  /* Paddings */
+  --padding-2xs: 2px;
+  --padding-xs: 3px;
+  --padding-sm: 5px;
+  --padding-md: 9px;
+  --padding-lg: 10px;
+  --padding-xl: 12px;
+  --padding-2xl: 25px;
+
+  /* border radiuses */
+  --br-xs: 5px;
+  --br-sm: 8px;
+  --br-md: 10px;
+  --br-lg: 15px;
+}

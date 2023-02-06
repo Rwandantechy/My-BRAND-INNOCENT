@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./ProfileSettings.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Titillium Web:wght@700;900&display=swap"
+    />
+  </head>
+  <body>
+    <div class="profile-settings">
+      <div class="profile-parent">
+        <b class="profile">Profile</b
+        ><img class="image-7-icon" alt="" src="public/image-7@2x.png" /><img
+          class="logout-1-icon"
+          alt=""
+          src="public/logout-1@2x.png"
+        />
+        <div class="logout">Logout</div>
+        <b class="account-setting" id="popupaccountSettingText"
+          >Account setting</b
+        >
+      </div>
+    </div>
+
+    <script>
+      var popupaccountSettingText = document.getElementById(
+        "popupaccountSettingText"
+      );
+      if (popupaccountSettingText) {
+        popupaccountSettingText.addEventListener("click", function (e) {
+          // Please sync "UPADTE profile" to the project
+        });
+      }
+      </script>
+  </body>
+</html>

@@ -226,7 +226,6 @@ textarea {
   top: 50%;
   transform: translateY(-50%);
   background: #fff;
-  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
   padding: 0.5rem;
 }
 @media only screen and (max-width: 56.25em) {
@@ -513,7 +512,7 @@ textarea {
 }
 .project-cs-hero-opened {
   color: #fff;
-  background-color: #2d2715; 
+  background-color: #2d2715;
   background-position: center;
   position: relative;
   min-height: 500px;
@@ -530,16 +529,16 @@ textarea {
   width: 92%;
   margin: auto;
 }
-.project-cs-hero__content-opened{
+.project-cs-hero__content-opened {
   padding: 15rem 0rem 12rem 0rem;
   max-width: 80%;
   width: 92%;
   margin: auto;
-  }
-  .project-details-style{
-    background-color: #1D1D1D;
-    padding-top: 0px;
-  }
+}
+.project-details-style {
+  background-color: #1d1d1d;
+  padding-top: 0px;
+}
 @media only screen and (max-width: 37.5em) {
   .project-cs-hero__content {
     padding: 19rem 0 13rem 0;
@@ -571,7 +570,7 @@ textarea {
   font-size: 2.8rem;
   margin-bottom: 3rem;
 }
-.project-details__content-title-opened{
+.project-details__content-title-opened {
   font-weight: 800;
   font-size: 2.8rem;
   margin-bottom: 3rem;
@@ -926,7 +925,7 @@ ul.user li.sign-in a:focus {
 }
 
 ul.user li.sign-in a {
-  background:transparent;
+  background: transparent;
   padding: 11px 17px;
   transition: 0.1s;
 }
@@ -940,9 +939,9 @@ ul.user li.sign-in a {
   font-weight: 600;
   text-transform: uppercase;
   transition: 0.1s;
-  outline: 0; 
+  outline: 0;
   box-shadow: none;
-  font-family: "Titilium Web;
+  font-family: "Titilium Web";
 }
 
 .btn-primary:hover {
@@ -956,31 +955,52 @@ ul.user li.sign-in a {
   outline: 0;
 }
 /* sign and sign up styles */
-.left-division{
-position: relative;
-width: 50%;
-background-color: #74726c;
-place-content: center;
-}
-.welcome-image{
-position: absolute;
-width:400px;
-max-height: 400px;
-margin-top:50px;
-margin-left: 10%;
-bottom: 30%;
-}
-.right-division{
-position:absolute;
-width: 50%;
-height:100%;
-margin-left:50%;
-background-color: #bb6f11;
-}
-.sign-content{
+.sign-content {
   position: relative;
   display: flex;
   width: 100%;
-  height: 65rem;
-  background-color: rgb(206, 120, 120);
+  height: 65rem; 
+  background-color: #d9d9d9;
+}
+.left-division,
+.right-division {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  top: 100px;
+}
+
+.signin-header{
+  position: relative;
+  display: flex;
+  width: 100%; 
+ 
+ justify-content: space-around;
+
+}
+.sign-in__socials{
+  position: relative; 
+  height:64px;
+  display: flex;
+
+}
+.sign-in__social-icon-link {
+  padding: relative;
+  width: 100%;
+  display: flex;
+  height: 64px;
+}
+  
+
+.sign-in__social-icon {
+  position: relative;
+  width: 100%;
+  display: flex;
+  height: 64px;
+  
+}
+.heading-signin{  
+  font-size:3.5rem;
+
+ 
 }

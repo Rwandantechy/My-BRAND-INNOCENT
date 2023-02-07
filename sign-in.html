@@ -1,120 +1,233 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
-
-    <link rel="stylesheet" href="./global-login.css" />
-    <link rel="stylesheet" href="./index-login.css" />
-
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Titillium Web:wght@600;700;900&display=swap"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/global.css" />
+
+    <title>my-brand</title>
   </head>
   <body>
-    <div class="sign-in-page">
-      <div class="sign-in-page1"></div>
-      <div class="sign-in-page2">
-        <div class="box-main-section"></div>
-        <div class="header-elements-full">
-          <div class="header">
-            <div class="header1"></div>
+    <div class="header1">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
             <img
-              class="prodfile-picture"
-              alt=""
-              src="public/prodfile-picture@2x.png"
+              src="images/profile-pic.png"
+              alt="Innocent NIYONZIMA'IMAGE AS A LOGO"
+              class="header__logo-img"
             />
-            <div class="innocent-niyonzima">INNOCENT NIYONZIMA</div>
           </div>
+          <span class="heading-primary"> NIYONZIMA INNOCENT</span>
         </div>
-        <div class="additions-and-some-links">
-          <div class="dont-have-an">DON'T HAVE AN ACCOUNT ?</div>
-          <div class="sign-up-now-container">
-            <p class="sign-up-now">SIGN UP NOW</p>
-          </div>
+
+        <!-- TWO BUTTONS FOR SIGNING IN AND SIGNING UP STARTS HERE  -->
+        <div class="two-button">
+          <ul class="user">
+            <li class="sign-in">
+              <a href="/sign-in.html" class="btn btn-primary"
+                ><i class="fa fa-user"></i> LOGIN</a
+              >
+            </li>
+            <li class="sign-up">
+              <a href="/sign-up.html" class="btn btn-primary"
+                ><i class="fa fa-user-plus"></i>SIGN UP</a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="login-section-elements">
-          <div class="login-button">
-            <div class="login-button1"></div>
-            <b class="login">lOGIN</b>
-          </div>
-          <img class="contact-form-icon" alt="" src="public/contact-form.svg" />
-          <div class="remember-me"></div>
-          <b class="forgot-password"
-            ><p class="sign-up-now">Forgot password?</p></b
-          ><b class="remember-me1">Remember me</b>
-          <div class="password-input-box">
-            <div class="email-input"></div>
-            <b class="password">password</b>
-          </div>
-          <div class="email-input-box">
-            <div class="email-input1"></div>
-            <b class="email">email</b>
-          </div>
-          <img class="tw-2-icon" alt="" src="public/tw-2@2x.png" /><img
-            class="lkn-2-icon"
-            alt=""
-            src="public/lkn-2@2x.png"
-          /><img
-            class="icons8-github-60-2"
-            alt=""
-            src="public/icons8github60-2@2x.png"
-          />
-          <div class="sign-title">
-            <div class="sign-in-with-container">
-              <p class="sign-in-with">Sign in with</p>
-            </div>
-          </div>
-          <div class="login-section-elements-child"></div>
-          <div class="login-section-elements-item"></div>
-          <div class="or">Or</div>
-        </div>
-        <div class="footer-elements-full">
-          <img
-            class="footer-section-icon"
-            alt=""
-            src="public/footer-section.svg"
-          />
-          <div class="footer-elements">
-            <b class="copyright-disclaimer">copyright disclaimer</b
-            ><img class="separator-icon" alt="" src="public/separator.svg" />
-            <div class="footer-introsocial">
-              <div class="intro-in-footer">
-                <div class="innocent-niyonzima1">INNOCENT nIYONZIMA</div>
-                <div class="about-me-in">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text
-                </div>
-              </div>
-              <div class="social-icons-in-footer">
-                <div class="icons-box">
-                  <div class="social-icons-holder"></div>
-                  <div class="icons">
-                    <img
-                      class="ig-1-icon"
-                      alt=""
-                      src="public/ig-1@2x.png"
-                    /><img
-                      class="icons8-github-60-1"
-                      alt=""
-                      src="public/icons8github60-1@2x.png"
-                    /><img
-                      class="tw-1-icon"
-                      alt=""
-                      src="public/tw-1@2x.png"
-                    /><img class="fb-1-icon" alt="" src="public/fb-1@2x.png" />
-                  </div>
-                </div>
-                <div class="social-heading">sOCIAL</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <img class="welcome-1-icon" alt="" src="public/welcome-1@2x.png" />
       </div>
     </div>
+    <!-- TWO BUTTONS FOR SIGNING IN AND SIGNING UP ENDS HERE  -->
+
+    <!-- NAVIGATIONS STARTS HERE  -->
+    <div class="header__main">
+      <ul class="header__links">
+        <li class="header__link-wrapper">
+          <a href="#home" class="header__link">Home</a>
+        </li>
+        <li class="header__link-wrapper">
+          <a href="#About-me" class="header__link">About me</a>
+        </li>
+        <li class="header__link-wrapper">
+          <a href="#About-me" class="header__link">my skills</a>
+        </li>
+        <li class="header__link-wrapper">
+          <a href="#projects" class="header__link">My work</a>
+        </li>
+        <li class="header__link-wrapper">
+          <a href="Blogs.html" class="header__link">Blogs</a>
+        </li>
+        <li class="header__link-wrapper">
+          <a href="#contact-me" class="header__link">Contact me</a>
+        </li>
+      </ul>
+      <!-- humberger menu for togglebutton -->
+
+      <div class="header__main-ham-menu-cont">
+        <img src="images/humbergermenu.svg" />
+        <img
+          src="images/ham-menu-close.svg"
+          alt="hamburger menu close"
+          class="header__main-ham-menu-close d-none"
+        />
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="#home"> Home </a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="#About-me" class="header__link">About me</a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="#About-me">my skills</a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="#projects">My work</a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="Blogs.html">Blogs</a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="#contact-me">Contact me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- HUMBERGER MENU OF SMALL DEVICES SENDS -->
+    <!-- MNAVIGATION MENU ENDS ERE  -->
+  <!-- SIGN IN SECTION -->
+     <section class="sign-content">
+      <div class="left-division">
+    <div class="welcome-image">
+      <img src="/images/welcome .png" alt="welcome image">
+    </div>
+
+
+      </div>
+      <div class="right-division">
+
+      </div>
+     </section>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--  FOOTER PART STARTS HERE -->
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://linkedin.com/in/INNOCENT"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="images/linkedin.svg"
+                  alt="innocent NIYONZIMA'S Linkedin Profile"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/innocent"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="images/github.svg"
+                  alt="innocent NIYONZIMA'S Github Profile"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://twitter.com/innocent"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="images/twitter.svg"
+                  alt="innocent NIYONZIMA'S  twitter"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://dev.to/Innocent"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="images/dev.svg"
+                  alt="innocent NIYONZIMA'S DEV Profile"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.youtube.com/channel/Innocent"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="images/youtube.svg"
+                  alt="innocent NIYONZIMA'S youtube Profile"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h2 class="heading heading-sm text-lt">INNOCENT NIYONZIMA</h2>
+            <p class="main-footer__short-desc">
+              A Backend focused Web Developer, I am longing to build the
+              resilent Web Applications and user-friendly software. I desire to
+              serve Rwanda
+            </p>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">
+          &copy; Copyright
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          . Made by Innocent
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER SECTION ENDS HERE -->
   </body>
 </html>
-

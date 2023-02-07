@@ -3,7 +3,8 @@
     "development"
   ],
   "hints": {
-    "axe/text-alternatives": "off"
+    "axe/text-alternatives": "off",
+    "disown-opener": "off"
   },
   "browserslist": [
     "defaults",

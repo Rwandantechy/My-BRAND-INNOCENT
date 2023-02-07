@@ -19,69 +19,62 @@
 
     <title>my-brand</title>
   </head>
-  <body>
-    <header class="header">
-      <div class="header__content">
-        <div class="header__logo-container">
-          <div class="header__logo-img-cont">
-            <img
-              src="images/profile-pic.png"
-              alt="Innocent NIYONZIMA'IMAGE AS A LOGO"
-              class="header__logo-img"
-            />
+  <body>   
+      <div class="header1">
+        <div class="header__content">
+          <div class="header__logo-container">
+            <div class="header__logo-img-cont">
+              <img
+                src="images/profile-pic.png"
+                alt="Innocent NIYONZIMA'IMAGE AS A LOGO"
+                class="header__logo-img"
+              />
+            </div>
+            <span class="heading-primary"> NIYONZIMA INNOCENT</span>
           </div>
-          <span class="header__logo-sub"> NIYONZIMA INNOCENT</span>
-        </div>
 
-        <!-- TWO BUTTONS FOR SIGNING IN AND SIGNING UP -->
-        <!-- <div class="btn-signin-signup">
-          <ul class="unstyled user">
-            <li class="sign-in">
-              <a href="sign-in.html" class="btn btn-primary">
-                <i class="fa fa-user"></i>
-                SIGN IN
-              </a>
-            </li>
-            <li class="sign-up">
-              <a href="sign-up.html" class="btn btn-primary">
-                <i class="fa fa-user-plus"></i>
-                SIGN UP
-              </a>
-            </li>
-          </ul>
-        </div> -->
-        <div class="header__main">
-          <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="#home" class="header__link">Home</a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="#About-me" class="header__link">About me</a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="#About-me" class="header__link">my skills</a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="#projects" class="header__link">My work</a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="Blogs.html" class="header__link">Blogs</a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="#contact-me" class="header__link">Contact me</a>
-            </li>
-          </ul>
-          <!-- humberger menu for togglebutton -->
-
-          <div class="header__main-ham-menu-cont">
-            <img src="images/humbergermenu.svg" />
-            <img
-              src="images/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
-            />
+          <!-- TWO BUTTONS FOR SIGNING IN AND SIGNING UP STARTS HERE  -->
+          <div>
+            <ul>
+              <li><a href="/sign-in.html"></a>LOGIN</li>
+              <li><a href="/sign-up.html"></a>SIGN UP</li>
+            </ul>
           </div>
         </div>
+      </div>
+      <!-- TWO BUTTONS FOR SIGNING IN AND SIGNING UP ENDS HERE  -->
+
+      <!-- NAVIGATIONS STARTS HERE  -->   
+    <div class="header__main">
+      <ul class="header__links">
+        <li class="header__link-wrapper">
+          <a href="#home" class="header__link">Home</a>
+        </li>
+        <li class="header__link-wrapper">
+          <a href="#About-me" class="header__link">About me</a>
+        </li>
+        <li class="header__link-wrapper">
+          <a href="#About-me" class="header__link">my skills</a>
+        </li>
+        <li class="header__link-wrapper">
+          <a href="#projects" class="header__link">My work</a>
+        </li>
+        <li class="header__link-wrapper">
+          <a href="Blogs.html" class="header__link">Blogs</a>
+        </li>
+        <li class="header__link-wrapper">
+          <a href="#contact-me" class="header__link">Contact me</a>
+        </li>
+      </ul>
+      <!-- humberger menu for togglebutton -->
+
+      <div class="header__main-ham-menu-cont">
+        <img src="images/humbergermenu.svg" />
+        <img
+          src="images/ham-menu-close.svg"
+          alt="hamburger menu close"
+          class="header__main-ham-menu-close d-none"
+        />
       </div>
       <div class="header__sm-menu">
         <div class="header__sm-menu-content">
@@ -107,8 +100,13 @@
           </ul>
         </div>
       </div>
-    </header>
-    <!-- Home section starts here--HERO SECTION -->
+    </div>
+    <!-- HUMBERGER MENU OF SMALL DEVICES SENDS -->
+    <!-- MNAVIGATION MENU ENDS ERE  -->
+
+    <!-- HEADER SECTION ENDS  HERE -->
+
+    <!-- HOME HERO SECTION STARTS HERE-->
     <section id="home" class="home-hero">
       <div class="home-hero__content">
         <h2 class="heading-primary">HEY, I'M INNOCENT NIYONZIMA</h2>
@@ -123,6 +121,7 @@
           <a href="#projects" class="btn btn--bg">Projects</a>
         </div>
       </div>
+      <!-- SOCIAL MEDIA LINKS FOR HERO SECTION STARTS HERE -->
       <div class="home-hero__socials">
         <div class="home-hero__social">
           <a
@@ -189,10 +188,11 @@
           </a>
         </div>
       </div>
+      <!-- SOCIOAL MEDIA LINKS ENDS HERE  -->
     </section>
+    <!-- HERO SECTION ENDS  -->
 
     <!--  ABOUT ME SECTION STARTS HERE -->
-
     <section id="About-me" class="about sec-pad">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-med">
@@ -206,7 +206,7 @@
         </h2>
         <div id="About-me" class="about__content">
           <div class="about__content-main">
-            <h3 class="about__content-title">Get to know me!</h3>
+            <h2 class="about__content-title">Get to know me!</h2>
             <div class="about__content-details">
               <p class="about__content-details-para">
                 I'm a
@@ -240,6 +240,7 @@
               Contact
             </a>
           </div>
+          <!-- SKILLS DIVISION STARTS HERE -->
           <div class="about__content-skills">
             <h3 class="about__content-title">My Skills</h3>
             <div class="skills">
@@ -257,9 +258,12 @@
               <div class="skills__skill">SQL Basics</div>
             </div>
           </div>
+          <!-- SKILLS DIVISION ENDS HERE  -->
         </div>
       </div>
     </section>
+    <!-- ABOUT ME SECTIONS ENDS HERE -->
+    <!-- PROJECTS SECTIONS STARTS  HERE -->
     <section id="projects" class="projects sec-pad">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-bg">
@@ -384,6 +388,8 @@
         </div>
       </div>
     </section>
+    <!-- TPROJECTS SECTION ENDS HERE -->
+    <!-- CONTACT SECTION  STARTS HERE -->
     <section id="contact-me" class="contact sec-pad dynamicBg">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-med">
@@ -434,9 +440,8 @@
         </div>
       </div>
     </section>
-    <!-- CONTACT ME SECTION ENDS  -->
-    <!--  FOOTER PART STARTS -->
-
+    <!-- CONTACT ME SECTION ENDS HERE -->
+    <!--  FOOTER PART STARTS HERE -->
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">
@@ -521,5 +526,6 @@
         </div>
       </div>
     </footer>
+    <!-- FOOTER SECTION ENDS HERE -->
   </body>
 </html>

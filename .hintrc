@@ -4,7 +4,9 @@
   ],
   "hints": {
     "axe/text-alternatives": "off",
-    "disown-opener": "off"
+    "disown-opener": "off",
+    "axe/forms": "off",
+    "axe/aria": "off"
   },
   "browserslist": [
     "defaults",

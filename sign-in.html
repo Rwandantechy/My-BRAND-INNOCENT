@@ -114,14 +114,19 @@
     <!-- SIGN IN SECTION -->
     <section class="sign-content">
       <div class="left-division">
-        <div class="welcome-image">
-          <img src="/images/welcome .png" alt="welcome image" />
+        <div class="welcomme-image">
+          <img
+            src="/images/welcome .png"
+            width="400px"
+            height="400px"
+            alt="welcome image"
+          />
         </div>
       </div>
       <div class="right-division">
         <div class="signin-header">
-          <h2 class="heading-signin">SIGN IN WITH</h2>
-          <div class="sign-in__socials">
+          <h1 class="title1">SIGN IN WITH</h1>
+          <span class="sign-in__socials">
             <a
               href="https://facebook.com/in/rwandantechy"
               class="sign-in__social-icon-link"
@@ -131,11 +136,13 @@
               <img
                 src="images/twitter.svg"
                 alt="facebook logo"
+                width="64px"
+                height="64px"
                 class="sign-in__social-icon"
               />
             </a>
-          </div>
-          <div class="sign-in__socials">
+          </span>
+          <span class="sign-in__socials">
             <a
               href="https://facebook.com/in/rwandantechy"
               class="sign-in__social-icon-link"
@@ -148,8 +155,8 @@
                 class="sign-in__social-icon"
               />
             </a>
-          </div>
-          <div class="sign-in__socials">
+          </span>
+          <span class="sign-in__socials">
             <a
               href="https://facebook.com/in/rwandantechy"
               class="sign-in__social-icon-link"
@@ -162,10 +169,11 @@
                 class="sign-in__social-icon"
               />
             </a>
-          </div>
+          </span>
         </div>
-<!-- sign in form  -->
-<div class="contact__form-container">
+        <span class="orcrossingborder">Or</span>
+        <!-- sign in form secction starts here -->
+        <div class="contact__form-container">
           <form action="#" class="contact__form" method="post">
             <input type="hidden" name="form-name" value="form 1" />
             <div class="contact__form-field">
@@ -187,17 +195,27 @@
                 name="password"
                 id="password"
               />
-            </div>           
-            <button type="submit" class="btn btn--theme contact__btn">
-              Submit
-            </button>
+            </div>
+            <div class="checkboxremember-me">
+              <input type="checkbox" value="lsRememberMe" id="rememberMe" />
+              <label for="rememberMe">Remember me</label>
+              <span class="forgotpasswordtext"><h2>Forgot password?</h2></span>
+            </div>
+            <div class="other-redirects">
+              <button type="submit" class="btn btn--theme contact__btn">
+                Submit
+              </button>
+            </div>
+            <div class="signup-redirect">
+              <h1>
+                Don't have account?
+                <span class="orange-text">
+                  <a href="sign-up.html"> SIGN UP NOW</a>
+                </span>
+              </h1>
+            </div>
           </form>
-        </div>       
-
-
-
-
-
+        </div>
       </div>
     </section>
 

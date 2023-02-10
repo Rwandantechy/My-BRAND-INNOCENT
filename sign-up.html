@@ -3,119 +3,234 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-      <link
-      rel="stylesheet"
-      href="./global.css"
-    />
-    <link rel="stylesheet" href="./index.css" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Titillium Web:wght@600;700;900&display=swap"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/global.css" />
+
+    <title>my-brand</title>
   </head>
+  <script src="/JavaScript/main.js"></script>
   <body>
-    <div class="sign-up-page">
-      <div class="header-elements-full">
-        <div class="header">
-          <div class="header1"></div>
-          <img
-            class="prodfile-picture"
-            alt=""
-            src="public/prodfile-picture@2x.png"
-          />
-          <div class="innocent-niyonzima">INNOCENT nIYONZIMA</div>
-        </div>
-      </div>
-      <div class="sign-up-section-elements">
-        <div class="form-section"></div>
-        <div class="contact-form"></div>
-        <div class="additional-container">
-          <span>hOME. </span
-          ><span class="already-have-an">Already have an account?</span
-          ><span> SIGN IN.</span>
-        </div>
-        <div class="sign">
-          <div class="create-account-button"></div>
-          <b class="create-account">CREATE ACCOUNT </b>
-        </div>
-        <div class="gender-input-box">
-          <div class="gender"></div>
-          <b class="gender-text"> --gender--</b>
-        </div>
-        <div class="phone-number-input-box">
-          <div class="phone-number"></div>
-          <b class="phone-number1">phone Number</b>
-        </div>
-        <div class="email">
-          <div class="email-address-input"></div>
-          <b class="emaill-address">Email Address</b>
-        </div>
-        <div class="lastname-input-boox">
-          <div class="lastname-input"></div>
-          <b class="lastname-text">lastName</b>
-        </div>
-        <div class="firstname-input-text">
-          <div class="lastname-input"></div>
-          <b class="firstname-text">firstName </b>
-        </div>
-        <div class="username">
-          <div class="lastname-input"></div>
-          <b class="username2">UserName</b>
-        </div>
-        <div class="intro-sign-up">
-          <div class="sign-up-title">
-            <b class="get-started"
-              ><span>GET </span><span class="started">STARTED</span></b
-            ><img class="sign-up-title-child" alt="" src="public/line-1.svg" />
+    <div class="header1">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="images/profile-pic.png"
+              alt="Innocent NIYONZIMA'IMAGE AS A LOGO"
+              class="header__logo-img"
+            />
           </div>
-          <b class="open-account-for"
-            >Open account for free and start over with us now!</b
-          >
-        </div>
-      </div>
-      <div class="footer-elements-full">
-        <img
-          class="footer-section-icon"
-          alt=""
-          src="public/footer-section.svg"
-        />
-        <div class="footer-elements">
-          <b class="copyright-disclaimer">copyright disclaimer</b
-          ><img class="separator-icon" alt="" src="public/separator.svg" />
-          <div class="footer-introsocial">
-            <div class="intro-in-footer">
-              <div class="innocent-niyonzima1">INNOCENT nIYONZIMA</div>
-              <div class="about-me-in">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text
-              </div>
-            </div>
-            <div class="social-icons-in-footer">
-              <div class="icons-box">
-                <div class="social-icons-holder"></div>
-                <div class="icons">
-                  <img class="ig-1-icon" alt="" src="public/ig-1@2x.png" /><img
-                    class="icons8-github-60-1"
-                    alt=""
-                    src="public/icons8github60-1@2x.png"
-                  /><img
-                    class="tw-1-icon"
-                    alt=""
-                    src="public/tw-1@2x.png"
-                  /><img class="fb-1-icon" alt="" src="public/fb-1@2x.png" />
-                </div>
-              </div>
-              <div class="social-heading">sOCIAL</div>
-            </div>
-          </div>
+          <span class="heading-primary"> NIYONZIMA INNOCENT</span>
         </div>
       </div>
     </div>
+    <!-- sign up section starts here  -->
+    <section class="sign-up-section">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main heading-sec__main--lt"
+          >GET
+          <span class="orange-text">started</span>
+        </span>
+
+        <span class="heading-sec__sub heading-sec__sub--lt">
+          Open account for free and start a great journey with us now!
+        </span>
+      </h2>
+      <div class="contact__form-container">
+        <form action="#" class="contact__form" method="post">
+          <input type="hidden" name="form-name" value="form 1" />
+
+          <div class="contact__form-field">
+            <input
+              required
+              type="text"
+              class="contact__form-input"
+              placeholder="UserName"
+              name="username"
+              id="username"
+            />
+          </div>
+          <div class="contact__form-field">
+            <input
+              required
+              type="text"
+              class="contact__form-input"
+              placeholder="FirstName"
+              name="firstname"
+              id="firstname"
+            />
+          </div>
+          <div class="contact__form-field">
+            <input
+              required
+              type="text"
+              class="contact__form-input"
+              placeholder="LastName"
+              name="lastname"
+              id="lastname"
+            />
+          </div>
+          <div class="contact__form-field">
+            <input
+              required
+              type="email"
+              class="contact__form-input"
+              placeholder="Email Address"
+              name="emailaddress"
+              id="email"
+            />
+          </div>
+          <div class="contact__form-field">
+            <input
+              required
+              type="password"
+              class="contact__form-input"
+              placeholder="Password"
+              name="password"
+              id="password"
+            />
+          </div>
+          <div class="contact__form-field">
+            <input
+              required
+              type="password"
+              class="contact__form-input"
+              placeholder="Confirm Password"
+              name="confirm-password"
+              id="confirm-password"
+            />
+          </div>
+
+          <div class="contact__form-field">
+            <input
+              class="contact__form-input"
+              type="tel"
+              id="phone"
+              placeholder="Phone number e.g. +1 702 123 4567"
+            />
+          </div>
+          <div class="contact__form-field">
+            <select class="contact__form-input" name="gender" id="gender">
+              <option value="" disabled selected hidden>Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="other">Other</option>
+              <option value="not-to-say">Rather not to say</option>
+            </select>
+          </div>
+          <div class="redirect-links">
+            <button
+              type="submit"
+              class="right-redirect-btn btn btn--med btn--theme project-details__links-btn"
+            >
+              Submit
+            </button>
+            <h1 class="left-redirect-part">
+              <a class="orange-text" href="Homepage.html"> HOME</a>
+              <span class="resized-text"> Already have an account? </span
+              ><a class="orange-text" href="sign-in.html">SIGN IN.</a>
+            </h1>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!--  FOOTER PART STARTS HERE -->
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://linkedin.com/in/INNOCENT"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="images/linkedin.svg"
+                  alt="innocent NIYONZIMA'S Linkedin Profile"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/innocent"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="images/github.svg"
+                  alt="innocent NIYONZIMA'S Github Profile"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://twitter.com/innocent"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="images/twitter.svg"
+                  alt="innocent NIYONZIMA'S  twitter"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://dev.to/Innocent"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="images/dev.svg"
+                  alt="innocent NIYONZIMA'S DEV Profile"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.youtube.com/channel/Innocent"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="images/youtube.svg"
+                  alt="innocent NIYONZIMA'S youtube Profile"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h2 class="heading heading-sm text-lt">INNOCENT NIYONZIMA</h2>
+            <p class="main-footer__short-desc">
+              A Backend focused Web Developer, I am longing to build the
+              resilent Web Applications and user-friendly software. I desire to
+              serve Rwanda
+            </p>
+          </div>
+        </div>
+
+        <div class="main-footer__lower">
+          &copy; Copyright
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          . Made by Innocent
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER SECTION ENDS HERE -->
   </body>
 </html>
-

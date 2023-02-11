@@ -1096,7 +1096,7 @@ ul.user li.sign-in a {
   position: relative;
   display: inline-block;
   justify-content: space-between;
-  width: 25%;
+  width: 20%;
   max-height: 142.9rem;
   background-color: #2d2715;
   border-right: #fd961a 3px solid;
@@ -1138,12 +1138,12 @@ ul.user li.sign-in a {
   flex-flow: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 75%;
+  width: 80%;
   height: 100%;
-  padding: 30px 30px 30px 30px;
+  padding: 20px 20px 20px 20px;
 }
 .information-cards {
-  width: 55rem;
+  width: 50rem;
   height: 25rem;
   border-radius: 5px;
   background-color: #1d1d1d;
@@ -1162,38 +1162,41 @@ ul.user li.sign-in a {
 .arrow-icon {
   transform: rotate(-45deg);
 }
-.menu-icon-card{
+.menu-icon-card {
   width: 64px;
   height: 64px;
 }
-.menu-title-card{
+.menu-title-card {
   position: relative;
-  display:flex;
-  padding:10rem 0rem 0rem 3rem;
+  display: flex;
+  padding: 10rem 0rem 0rem 3rem;
   justify-content: space-between;
-  
 }
 .total-count {
   position: relative;
-  display: flex; 
-  width:12rem;
-  height:12rem;
+  display: flex;
+  width: 10rem;
+  height: 8rem;
   background-color: #333;
   border-radius: 10px;
 }
-.orange-big-text{
-  font-size:4rem;
+.orange-big-text {
+  font-size:3rem;
   color: #fd961a;
   align-self:center;
-  padding-left: 10px;
-
+  padding-left:10px;
 }
-.big-card-latest-articles{ 
+.big-card-latest-articles {
+ 
   width: 115rem;
   height: 50rem;
   border-radius: 5px;
   background-color: #1d1d1d;
   margin: 10px 10px 10px 10px;
   border: #fd961a 2px solid;
-
+}
+.heading-latest-post{
+  font-size:4rem;
+  color:white;
+  text-align: center;
 }

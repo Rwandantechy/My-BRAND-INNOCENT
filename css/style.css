@@ -1037,3 +1037,91 @@ ul.user li.sign-in a {
 .resized-text {
   font-size: 2rem;
 }
+/* Dashboard styles starts here */
+.header-section {
+  position: relative;
+  width: 100%;
+  height: 15%;
+  background-color:#2d2715;
+  padding: 20px 20px 20px 20px;
+  
+}
+.header-section-elements {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.profile-pic {
+  position: relative;
+  display: flex;
+}
+.profile-pic:hover{
+  background-color: white;
+  border-radius:110%;
+}
+.admin-name {
+  position: relative;
+  display: flex;
+  align-self: center;
+  color: orange;
+  font-size: 3.1rem;
+  padding: 10px 10px 10px 10px ;
+}
+.admin-name:hover{
+  color: white;
+}
+.setting-account {
+  margin-right: 40px;
+  align-self: center;
+}
+.setting-account:hover{
+ background: -webkit-gradient(linear, left top, left bottom,from(rgba(224, 218, 218, 0.8)), to(white));
+  stroke-opacity:20px ;
+  border-radius: 50%;
+}
+.side-menu-section{
+  position: relative;
+  display:inline-block; 
+  justify-content: space-between; 
+  width: 25%;
+  height:100%;
+  background-color: #2D2715;
+  border-right: #fd961a 3px solid;
+  border-radius:0px 10px 0px 0px;
+  padding-bottom: 20px;
+  
+  }
+ .menu-item{   
+ position: relative;
+ display: block;
+ padding: 10px 10px 10px 10px;
+ align-items: center;
+
+  }
+ .menu-link{
+ position: relative;
+ display: flex;
+ justify-content: first baseline;  
+}
+.menu-link:hover{
+ background-color:#fd961a;
+ border-radius: 0px 50px 50px 0px; 
+ margin: -10px !important;
+ margin-right: 20px !important;
+ 
+
+}
+.menu-icon{
+ max-width: 64px;
+ max-height: 64px;
+ color: white;  
+}
+.menu-title{
+  position: relative;
+  display: flex;
+  align-self: center;
+  font-size: 2.4rem;
+  color: white ;
+  padding: 0px 0px 0px 10px;
+}
+

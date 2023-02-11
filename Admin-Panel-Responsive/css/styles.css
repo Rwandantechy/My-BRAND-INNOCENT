@@ -1,6 +1,7 @@
 body {
   margin: 0;
   line-height: normal;
+  box-sizing: border-box;
 }
 .popup-overlay {
   display: flex;
@@ -15,8 +16,8 @@ body {
   position: absolute;
   top: 1.56px;
   left: 0;
-  width: 1982px;
-  height: 1973.44px;
+  width:100%;
+  height: 100%;
   object-fit: cover;
 }
 .innocent-niyonzima {
@@ -39,25 +40,22 @@ body {
 }
 .profile1 {
   position: absolute;
-  top: calc(50% - 93.39px);
-  left: calc(50% - 194px);
   width: 347px;
   height: 186.79px;
 }
 .icons8-settings-128-1 {
   position: absolute;
   top: 67px;
-  left: 324px;
+  left: 100px;
   width: 64px;
   height: 64px;
   object-fit: cover;
 }
 .profile-menu {
   position: absolute;
-  top: calc(50% - 990px);
-  left: calc(50% + 563px);
-  width: 388px;
-  height: 186.79px;
+  
+  width: 58px;
+  height:50px;
   color: var(--color-darkorange);
 }
 .group-child {
@@ -72,11 +70,11 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 620px;
-  height: 300px;
+  width: 220px;
+  height: 200px;
 }
 .group-item {
-  left: 451.54px;
+  left: 200.54px;
   width: 63.52px;
   height: 61.09px;
   cursor: pointer;
@@ -87,11 +85,13 @@ body {
   left: 78.71px;
   display: flex;
   align-items: flex-end;
-  width: 332.78px;
+  width: 132.78px;
   height: 59.73px;
 }
 .counter-holder {
-  position: absolute;
+  position:
+  
+  absolute;
   top: 0;
   left: 0;
   border-radius: var(--br-md);
@@ -126,7 +126,7 @@ body {
 }
 .total {
   top: 0;
-  left: 407.35px;
+  left: 100.35px;
   width: 128.42px;
   height: 108.6px;
   font-size: var(--font-size-xs);
@@ -145,7 +145,7 @@ body {
   position: absolute;
   top: 1.36px;
   left: 0;
-  width: 535.77px;
+  width: 100.77px;
   height: 108.6px;
 }
 .icons8-page-64-1 {
@@ -153,7 +153,7 @@ body {
   top: 0;
   left: 1.38px;
   width: 77.18px;
-  height: 81.45px;
+  height: 30.45px;
   object-fit: cover;
 }
 .articles,
@@ -162,7 +162,7 @@ body {
   position: absolute;
   top: 103.17px;
   left: 0;
-  width: 535.77px;
+  width: 100.77px;
   height: 109.95px;
 }
 .articles,
@@ -172,10 +172,10 @@ body {
   height: 213.12px;
 }
 .articles {
-  top: 209px;
-  left: 1313px;
-  width: 620px;
-  height: 300px;
+  top: 1200px;
+  left: 188;
+  width: 230px;
+  height: 200px;
   font-size: var(--font-size-sm);
 }
 .k2,
@@ -208,12 +208,12 @@ body {
 .content1 {
   top: 104.52px;
   left: 0;
-  width: 458.44px;
+  width: 208.44px;
 }
 .iconsaxboldexportsquare {
   position: absolute;
   top: 0;
-  left: 374.21px;
+  left: 200.21px;
   border-radius: var(--br-md);
   width: 63.52px;
   height: 61.09px;
@@ -225,8 +225,8 @@ body {
   position: absolute;
   top: 0;
   left: 100.8px;
-  width: 458.44px;
-  height: 213.12px;
+  width: 228.44px;
+  height: 113.12px;
 }
 .image-1-icon {
   top: 112.67px;
@@ -241,13 +241,13 @@ body {
   position: absolute;
   top: 24.43px;
   left: 45.57px;
-  width: 559.24px;
+  width: 229.24px;
   height: 213.12px;
 }
 .likes {
-  top: 625px;
-  left: 1313px;
-  width: 620px;
+  top: 200px;
+  left: 120px;
+  width: 220px;
   height: 300px;
   font-size: var(--font-size-sm);
 }
@@ -258,7 +258,7 @@ body {
   left: 0;
   display: flex;
   align-items: flex-end;
-  width: 332.78px;
+  width: 302.78px;
   height: 59.73px;
 }
 .k4 {
@@ -319,10 +319,10 @@ body {
   height: 215.84px;
 }
 .comments {
-  top: 625px;
-  left: 509px;
-  width: 620px;
-  height: 300px;
+  top: 225px;
+  left: 209px;
+  width: 320px;
+  height: 200px;
   font-size: var(--font-size-sm);
 }
 .k6,
@@ -332,7 +332,7 @@ body {
   left: 0;
   display: flex;
   align-items: flex-end;
-  width: 361.78px;
+  width: 221.78px;
   height: 61.09px;
 }
 .k6 {
@@ -346,7 +346,7 @@ body {
 }
 .total3 {
   top: 0;
-  left: 367.31px;
+  left: 200.31px;
   width: 128.42px;
   font-size: var(--font-size-xs);
   color: var(--color-black);
@@ -354,12 +354,12 @@ body {
 .content3 {
   top: 104.52px;
   left: 0;
-  width: 495.72px;
+  width: 225.72px;
 }
 .iconsaxboldexportsquare2 {
   position: absolute;
   top: 0;
-  left: 419.78px;
+  left: 222.78px;
   border-radius: var(--br-md);
   width: 63.52px;
   height: 61.09px;
@@ -391,8 +391,8 @@ body {
 }
 .registrered-users {
   position: absolute;
-  top: 209px;
-  left: 509px;
+  top: 119px;
+  left:339px;
   width: 620px;
   height: 300px;
   font-size: 28px;

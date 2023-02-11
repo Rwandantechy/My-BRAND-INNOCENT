@@ -1042,9 +1042,8 @@ ul.user li.sign-in a {
   position: relative;
   width: 100%;
   height: 15%;
-  background-color:#2d2715;
+  background-color: #2d2715;
   padding: 20px 20px 20px 20px;
-  
 }
 .header-section-elements {
   position: relative;
@@ -1055,9 +1054,9 @@ ul.user li.sign-in a {
   position: relative;
   display: flex;
 }
-.profile-pic:hover{
+.profile-pic:hover {
   background-color: white;
-  border-radius:110%;
+  border-radius: 110%;
 }
 .admin-name {
   position: relative;
@@ -1065,63 +1064,136 @@ ul.user li.sign-in a {
   align-self: center;
   color: orange;
   font-size: 3.1rem;
-  padding: 10px 10px 10px 10px ;
+  padding: 10px 10px 10px 10px;
 }
-.admin-name:hover{
+.admin-name:hover {
   color: white;
 }
 .setting-account {
   margin-right: 40px;
   align-self: center;
 }
-.setting-account:hover{
- background: -webkit-gradient(linear, left top, left bottom,from(rgba(224, 218, 218, 0.8)), to(white));
-  stroke-opacity:20px ;
+.setting-account:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(224, 218, 218, 0.8)),
+    to(white)
+  );
+  stroke-opacity: 20px;
   border-radius: 50%;
 }
-.side-menu-section{
+.content-section-admin {
   position: relative;
-  display:inline-block; 
-  justify-content: space-between; 
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  border-right: #2d2715 10px solid;
+}
+.side-menu-section {
+  position: relative;
+  display: inline-block;
+  justify-content: space-between;
   width: 25%;
-  height:100%;
-  background-color: #2D2715;
+  max-height: 142.9rem;
+  background-color: #2d2715;
   border-right: #fd961a 3px solid;
-  border-radius:0px 10px 0px 0px;
-  padding-bottom: 20px;
-  
-  }
- .menu-item{   
- position: relative;
- display: block;
- padding: 10px 10px 10px 10px;
- align-items: center;
-
-  }
- .menu-link{
- position: relative;
- display: flex;
- justify-content: first baseline;  
+  border-radius: 0px 10px 0px 0px;
+  /* padding-bottom: 20px; */
 }
-.menu-link:hover{
- background-color:#fd961a;
- border-radius: 0px 50px 50px 0px; 
- margin: -10px !important;
- margin-right: 20px !important;
- 
-
+.menu-item {
+  position: relative;
+  display: block;
+  padding: 10px 10px 10px 10px;
+  align-items: center;
 }
-.menu-icon{
- max-width: 64px;
- max-height: 64px;
- color: white;  
+.menu-link {
+  position: relative;
+  display: flex;
+  justify-content: first baseline;
 }
-.menu-title{
+.menu-link:hover {
+  background-color: #fd971abd;
+  border-radius: 0px 50px 50px 0px;
+  margin: -10px !important;
+  margin-right: 20px !important;
+}
+.menu-icon {
+  max-width: 64px;
+  max-height: 64px;
+  color: white;
+}
+.menu-title {
   position: relative;
   display: flex;
   align-self: center;
   font-size: 2.4rem;
-  color: white ;
+  color: white;
   padding: 0px 0px 0px 10px;
 }
+.cards-section {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 75%;
+  height: 100%;
+  padding: 30px 30px 30px 30px;
+}
+.information-cards {
+  width: 55rem;
+  height: 25rem;
+  border-radius: 5px;
+  background-color: #1d1d1d;
+  margin: 10px 10px 10px 10px;
+  border: #fd961a 2px solid;
+}
+.arrow-square {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 5px;
+  float: right;
+  margin: 10px 10px 10px 10px;
+}
 
+.arrow-icon {
+  transform: rotate(-45deg);
+}
+.menu-icon-card{
+  width: 64px;
+  height: 64px;
+}
+.menu-title-card{
+  position: relative;
+  display:flex;
+  padding:10rem 0rem 0rem 3rem;
+  justify-content: space-between;
+  
+}
+.total-count {
+  position: relative;
+  display: flex; 
+  width:12rem;
+  height:12rem;
+  background-color: #333;
+  border-radius: 10px;
+}
+.orange-big-text{
+  font-size:4rem;
+  color: #fd961a;
+  align-self:center;
+  padding-left: 10px;
+
+}
+.big-card-latest-articles{ 
+  width: 115rem;
+  height: 50rem;
+  border-radius: 5px;
+  background-color: #1d1d1d;
+  margin: 10px 10px 10px 10px;
+  border: #fd961a 2px solid;
+
+}

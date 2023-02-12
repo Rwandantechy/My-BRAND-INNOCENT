@@ -846,6 +846,8 @@ textarea {
   background-size: contain;
   background-color: white;
   background-size: contain;
+  padding-left: 10px;
+  border-radius: 10px;
 }
 .main-footer__icon {
   margin-right: 1rem;
@@ -1181,22 +1183,114 @@ ul.user li.sign-in a {
   border-radius: 10px;
 }
 .orange-big-text {
-  font-size:3rem;
+  font-size: 3rem;
   color: #fd961a;
-  align-self:center;
-  padding-left:10px;
+  align-self: center;
+  padding-left: 10px;
 }
 .big-card-latest-articles {
- 
-  width: 115rem;
-  height: 50rem;
+  width: 85%;
+  height: 55em;
   border-radius: 5px;
   background-color: #1d1d1d;
-  margin: 10px 10px 10px 10px;
+  margin: 10px 30px 10px 10px;
   border: #fd961a 2px solid;
 }
-.heading-latest-post{
-  font-size:4rem;
-  color:white;
+.post-padding {
+  padding: 00px 0px 0px 40px;
+}
+.heading-latest-post {
+  font-size: 4rem;
+  color: white;
   text-align: center;
+}
+.post-content {
+  position: relative;
+  display: flex;
+  padding: 0 6rem 0rem 4rem;
+}
+.descrption {
+  position: relative;
+  justify-content: center;
+  font-size: 1.7rem;
+  color: white;
+  padding: 3rem 1rem 1rem 1rem;
+}
+.all-articles-section {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-right: 5%;
+  display: block;
+}
+
+.articles-heading {
+  position: relative;
+  display: flex;
+  width: 86%;
+  padding: 20px 0px 0px 10px;
+  justify-content: space-between;
+}
+
+.articles_row-img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.articles__row-img-cont {
+  position: relative;
+  overflow: hidden;
+  border: #fd961a 2px solid;
+  width: 400em;
+}
+.publisher-info-stats {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2.5rem;
+  color: white;
+}
+.one-component {
+  position: relative;
+  gap: 0rem;
+  display: inline-flex;
+}
+.operation-articles {
+  position: relative;
+  height: 9rem;
+  display: flex;
+  padding-top: 10rem;
+  justify-content: space-between;
+}
+.icon-bg-color {
+  background-color: #111;
+  width: 180px;
+  height: 64px;
+  border-radius: 10px;
+}
+.counter-up-down {
+  width: 230px;
+  height: 50px;
+  background-color: #2d2715;
+  border-radius: 10px;
+}
+.counter-articles {
+  font-size: 3rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.next-previous {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  width: 86%;
+}
+.icon2 {
+  width: 64px;
+  height: 64px;
+}
+.previous {
+  transform: rotate(-180deg);
 }

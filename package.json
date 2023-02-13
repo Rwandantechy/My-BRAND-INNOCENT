@@ -2,7 +2,7 @@
   "name": "my-brand",
   "version": "1.0.0",
   "description": "this is my brand that is initially static without javascript",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

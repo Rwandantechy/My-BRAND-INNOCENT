@@ -284,7 +284,7 @@ h5 {
 /*** Boxed Body ***/
 
 body.boxed {
-  background: url("../images/bg.png");
+  background: url("../Assets/images/bg.png");
   background-attachment: fixed;
 }
 
@@ -1087,11 +1087,11 @@ ul.nav.nav-tabs li.active a:hover {
 }
 
 #main-slide .item.item-1 {
-  background-image: url("../images/slider/bg1.jpg");
+  background-image: url("../Assets/images/slider/bg1.jpg");
 }
 
 #main-slide .item.item-2 {
-  background-image: url("../images/slider/bg2.jpg");
+  background-image: url("../Assets/images/slider/bg2.jpg");
 }
 
 #main-slide .item:after {
@@ -1329,7 +1329,7 @@ ul.nav.nav-tabs li.active a:hover {
   position: relative;
   padding: 0;
   color: #fff;
-  background-image: url("../images/backgrounds/bg-banner.jpg");
+  background-image: url("../Assets/images/backgrounds/bg-banner.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1486,7 +1486,7 @@ ul.nav.nav-tabs li.active a:hover {
 }
 
 .bg-image-1 {
-  background-image: url(../images/backgrounds/bg-video.jpg);
+  background-image: url(../Assets/images/backgrounds/bg-video.jpg);
   background-size: cover;
   background-position: center center;
   height: 625px;
@@ -2249,7 +2249,7 @@ ul.nav.nav-tabs li.active a:hover {
 /*** Bitcoin Calculator ***/
 
 .bitcoin-calculator-section {
-  background-image: url("../images/backgrounds/bg-calculator.jpg");
+  background-image: url("../Assets/images/backgrounds/bg-calculator.jpg");
   height: 218px;
   position: relative;
   background-attachment: fixed;
@@ -2960,7 +2960,7 @@ body.blog .pagination li.active a {
 }
 
 .bg-image-2 {
-  background-image: url(../images/backgrounds/bg-quote.jpg);
+  background-image: url(../Assets/images/backgrounds/bg-quote.jpg);
   background-size: cover;
   background-position: center center;
   height: 580px;
@@ -3415,7 +3415,7 @@ section.shop-checkout {
 .call-action-all {
   padding: 0;
   position: relative;
-  background: url("../images/backgrounds/call-to-action-bg.jpg");
+  background: url("../Assets/images/backgrounds/call-to-action-bg.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -3671,15 +3671,15 @@ section.shop-checkout {
 }
 
 #carousel-testimonials .item.item-1 {
-  background-image: url("../images/backgrounds/bg-user.jpg");
+  background-image: url("../Assets/images/backgrounds/bg-user.jpg");
 }
 
 #carousel-testimonials .item.item-2 {
-  background-image: url("../images/backgrounds/bg-user-2.jpg");
+  background-image: url("../Assets/images/backgrounds/bg-user-2.jpg");
 }
 
 #carousel-testimonials .item.item-3 {
-  background-image: url("../images/backgrounds/bg-user-3.jpg");
+  background-image: url("../Assets/images/backgrounds/bg-user-3.jpg");
 }
 
 #carousel-testimonials .carousel-control {
@@ -3762,14 +3762,14 @@ section.shop-checkout {
 /*** Error Page ***/
 body.error-page .error {
   height: 100vh;
-  background-image: url("../images/backgrounds/404.jpg");
+  background-image: url("../Assets/images/backgrounds/404.jpg");
   background-size: cover;
   background-position: center center;
   padding: 0;
 }
 
 body.error-page.server-error-page .error {
-  background-image: url("../images/backgrounds/503.jpg");
+  background-image: url("../Assets/images/backgrounds/503.jpg");
 }
 
 body.error-page .error .logo {
@@ -3840,7 +3840,7 @@ body.error-page .error a.refresh:hover {
 /*** Coming Soon Page ***/
 
 body.error-page.coming-soon .error {
-  background-image: url("../images/backgrounds/coming-soon.jpg");
+  background-image: url("../Assets/images/backgrounds/coming-soon.jpg");
 }
 
 body.error-page.coming-soon .coming-soon-title {

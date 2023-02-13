@@ -957,6 +957,12 @@ ul.user li.sign-in a {
   outline: 0;
 }
 /* sign and sign up styles */
+
+.welcome-image {
+  max-width: 400px;
+  max-height: 400px;
+}
+
 .sign-content {
   position: relative;
   display: flex;

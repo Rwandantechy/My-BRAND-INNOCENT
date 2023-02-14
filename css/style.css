@@ -441,7 +441,7 @@ textarea {
   text-align: left;
 }
 .contact__form-input {
-  color: black;
+  color: rgba(0, 0, 0, 0.637);
   padding: 2rem;
   width: 100%;
   border: 1px solid #fd961a;
@@ -452,44 +452,44 @@ textarea {
   font-weight: 600;
 }
 .contact__form-input::-moz-placeholder {
-  color: black;
+  color: rgba(24, 22, 22, 0.747);
   font-weight: 600;
   font-size: 1.6rem;
 }
 .contact__form-input:-ms-input-placeholder {
-  color: black;
+  color: rgb(34, 33, 33);
   font-weight: 600;
   font-size: 1.6rem;
 }
 .contact__form-input::placeholder {
-  color: black;
+  color: rgb(34, 32, 32);
   font-weight: 600;
   font-size: 1.6rem;
 }
 .contact__form-input::-webkit-input-placeholder {
-  color: black;
+  color: rgb(34, 32, 32);
   font-weight: 600;
   font-size: 1.6rem;
 }
 .contact__form-input:-ms-input-placeholder {
-  color: black;
+  color: rgb(24, 22, 22);
   font-weight: 600;
   font-size: 1.6rem;
 }
 .contact__form-input::-ms-input-placeholder {
-  color: black;
+  color: rgb(34, 32, 32);
   font-weight: 600;
   font-size: 1.6rem;
 }
 .contact__form-input:-moz-placeholder {
   opacity: 1;
-  color: black;
+  color: rgb(26, 22, 22);
   font-weight: 600;
   font-size: 1.6rem;
 }
 .contact__form-input::-moz-placeholder {
   opacity: 1;
-  color: black;
+  color: rgba(27, 25, 25, 0.849);
   font-weight: 600;
   font-size: 1.6rem;
 }
@@ -1252,7 +1252,9 @@ ul.user li.sign-in a {
 .publisher-info-stats {
   position: relative;
   display: flex;
-  justify-content: space-evenly;
+  padding-left: 35px;
+  padding-right: 20px;
+  justify-content: space-between;
   font-size: 2.5rem;
   color: white;
 }
@@ -1299,4 +1301,38 @@ ul.user li.sign-in a {
 }
 .previous {
   transform: rotate(-180deg);
+}
+.uploading-article-project {
+  width: 87%;
+  height: 90%;
+  margin: 30px 30px 30px 30px;
+
+  display: block;
+}
+.fieldset-size {
+  color: black;
+  font-size: 2rem;
+}
+.project-article-title {
+  text-align: center;
+}
+.comments-privelege {
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-around;
+}
+.technologies-used {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  gap: 10px;
+  flex-direction: column;
+justify-content: space-around;
+padding-left: 20px;
+}
+.Technologies-title{
+text-align: left;
+color: orange;
+
 }

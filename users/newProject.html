@@ -94,135 +94,118 @@
           >
         </div>
       </aside>
-      <section class="all-articles-section">
-        <div class="articles-heading">
-          <a
-            class="btn btn--med btn--theme dynamicBgClr"
-            href="/users/newProject.html"
-          >
-            ADD NEW PROJECT
-          </a>
-          <div class="counter-up-down">
-            <h2 class="counter-articles">
-              Project: &nbsp;<span class="orange-text" id="counter-up-down"
-                >2/10</span
-              >
-            </h2>
-          </div>
-        </div>
-        <div class="big-card-latest-articles">
-          <a href="/users/articles.html" class="latest-post-link">
-            <h1 class="orange-big-text post-padding">Email client software.</h1>
-          </a>
-          <div class="publisher-info-stats">
-            Publishing Date:
-            <script>
-              var date = new Date();
-              var day = date.getDate();
-              var month = date.getMonth() + 1;
-              var year = date.getFullYear();
-              document.write("on: " + day + "/" + month + "/" + year);
-            </script>
-          </div>
-          <div class="post-content">
-            <div class="articles__row-img-cont">
-              <img
-                src="/images/image1.jpg"
-                alt="Software Screenshot"
-                class="articles_row-img"
-                loading="lazy"
+      <section class="uploading-article-project">
+        <h1 class="orange-big-text project-article-title">
+          You can Now post your Projects and hook Potential clients Today.
+          Expertise matters!
+        </h1>
+        <div class="contact__form-container">
+          <form action="#" class="contact__form" method="post">
+            <input type="hidden" name="form-name" value="form 4" />
+            <div class="contact__form-field fieldset-size">
+              <input
+                required
+                type="text"
+                class="contact__form-input fieldset-size"
+                placeholder="Project Title"
+                name="project-title"
+                id="p-title"
               />
             </div>
-
-            <p class="descrption">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
-              magnam! Corrupti, nisi? Provident voluptate et distinctio! Minus,
-              numquam commodi, eligendi dolor maxime sapiente saepe provident
-              vel placeat ex accusantium error? Vitae sint ea dolores
-              necessitatibus perspiciatis, nulla placeat quisquam earum quam
-              totam similique nemo maxime vel sapiente voluptate, ullam in
-              praesentium fugiat. Ut nobis repudiandae omnis quaerat totam<span
-                class="orange-text"
-                >...</span
-              >
-              <span class="operation-articles">
-                <a
-                  href="/users/update-article.html
-              "
-                  ><img
-                    src="/images/update.png"
-                    alt="update icon"
-                    class="icon-bg-color"
-                  />
-                </a>
-                <a href="/users/delete-article.js"
-                  ><img
-                    src="/images/delete.png"
-                    alt="update icon"
-                    class="icon-bg-color"
-                  />
-                </a>
-              </span>
-            </p>
-          </div>
-        </div>
-        <div class="big-card-latest-articles">
-          <a href="/users/articles.html" class="latest-post-link">
-            <h1 class="orange-big-text post-padding">
-              Network packet sniffer.
-            </h1>
-          </a>
-          <div class="publisher-info-stats">
-            Publishing Date:
-            <script>
-              var date = new Date();
-              var day = date.getDate();
-              var month = date.getMonth() + 1;
-              var year = date.getFullYear();
-              document.write("on: " + day + "/" + month + "/" + year);
-            </script>
-          </div>
-          <div class="post-content">
-            <div class="articles__row-img-cont">
-              <img
-                src="/images/image1.jpg"
-                alt="Software Screenshot"
-                class="articles_row-img"
-                loading="lazy"
+            <div class="contact__form-field">
+              <fieldset>
+                <input
+                  type="file"
+                  name="picture"
+                  class="contact__form-input fieldset-size"
+                  id="picture-project"
+                />
+              </fieldset>
+            </div>
+            <div class="contact__form-field fieldset-size">
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input fieldset-size"
+                placeholder="Type here Project descrptions"
+                name="proj-descri-message"
+                id="proj-descri-message"
+              ></textarea>
+            </div>
+            <div class="contact__form-field fieldset-size">
+              <input
+                required
+                type="text"
+                class="contact__form-input fieldset-size"
+                placeholder="Project Github Link"
+                name="project-title"
+                id="p-title"
               />
             </div>
+            <div class="technologies-used">
+              <h1 class="Technologies-title">
+                Choose The Technologies for this Project:
+              </h1>
+              <div class="one-component">
+                <input type="checkbox" id="option1" name="option1" value="1" />
+                <label for="option1">HTML</label><br />
+              </div>
+              <div class="one-component">
+                <input type="checkbox" id="option2" name="option2" value="2" />
+                <label for="option2">NODE JS</label><br />
+              </div>
 
-            <p class="descrption">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
-              magnam! Corrupti, nisi? Provident voluptate et distinctio! Minus,
-              numquam commodi, eligendi dolor maxime sapiente saepe provident
-              vel placeat ex accusantium error? Vitae sint ea dolores
-              necessitatibus perspiciatis, nulla placeat quisquam earum quam
-              totam similique nemo maxime vel sapiente voluptate, ullam in
-              praesentium fugiat. Ut nobis repudiandae omnis quaerat totam<span
-                class="orange-text"
-                >...</span
-              >
-              <span class="operation-articles">
-                <a
-                  href="/users/update-article.html
-              "
-                  ><img
-                    src="/images/update.png"
-                    alt="update icon"
-                    class="icon-bg-color"
-                  />
-                </a>
-                <a href="/users/delete-article.js"
-                  ><img
-                    src="/images/delete.png"
-                    alt="update icon"
-                    class="icon-bg-color"
-                  />
-                </a>
-              </span>
-            </p>
-          </div>
+              <div class="one-component">
+                <input type="checkbox" id="option3" name="option3" value="2" />
+                <label for="option3"> JavaScript</label><br />
+              </div>
+
+              <div class="one-component">
+                <input type="checkbox" id="option4" name="option4" value="2" />
+                <label for="option4"> Github</label><br />
+              </div>
+
+              <div class="one-component">
+                <input type="checkbox" id="option5" name="option5" value="2" />
+                <label for="option5"> .NET Framework</label><br />
+              </div>
+
+              <div class="one-component">
+                <input type="checkbox" id="option6" name="option6" value="2" />
+                <label for="option6"> Python</label><br />
+              </div>
+
+              <div class="one-component">
+                <input type="checkbox" id="option7" name="option7" value="2" />
+                <label for="option7"> PHP</label><br />
+              </div>
+
+              <div class="one-component">
+                <input type="checkbox" id="option8" name="option8" value="2" />
+                <label for="option8"> SQL Basics</label><br />
+              </div>
+
+              <div class="one-component">
+                <input type="checkbox" id="option9" name="option9" value="2" />
+                <label for="option9">Postgres Sql</label><br />
+              </div>
+
+              <div class="one-component">
+                <input
+                  type="checkbox"
+                  id="option10"
+                  name="option10"
+                  value="2"
+                />
+                <label for="option10">JavaScript</label><br />
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn--theme contact__btn">
+              Post
+            </button>
+          </form>
         </div>
         <div class="next-previous">
           <div class="one-component">
@@ -231,11 +214,7 @@
               alt="next icon"
               class="previous icon2"
             />
-            <span class="orange-big-text" id="previous-slide"> Previous</span>
-          </div>
-          <div class="one-component">
-            <span class="orange-big-text" id="next-slide">Next</span>
-            <img src="/images/next.svg" alt="previous icon" class="icon2" />
+            <span class="orange-big-text" id="previous-slide">BACK</span>
           </div>
         </div>
       </section>
@@ -321,7 +300,7 @@
           <script>
             document.write(new Date().getFullYear());
           </script>
-          . Made By Innocen...Rwandan techy
+          . Made By Innocent...Rwandan techy
         </div>
       </div>
     </footer>

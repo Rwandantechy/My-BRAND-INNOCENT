@@ -997,13 +997,14 @@ ul.user li.sign-in a {
 .left-division {
   position: relative;
   width: 50%;
-  padding-top: 6%;
+ 
 }
 .right-division {
   position: relative;
   width: 50%;
+  margin-top: 0px;
   justify-content: center;
-  padding-bottom: 5%;
+ 
 }
 .signin-header {
   display: flex;

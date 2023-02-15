@@ -63,7 +63,7 @@ textarea {
 }
 @media only screen and (max-width: 37.5em) {
   .heading-primary {
-    font-size: 4.5rem;
+    font-size: 2.5rem;
   }
 }
 .heading-sec__mb-bg {
@@ -159,6 +159,24 @@ textarea {
 .two-button {
   display: flex;
   justify-content: flex-end;
+}
+@media only screen and (max-width: 37.5em) {
+  .two-button{ 
+    position: absolute;
+    width: 100%;
+    display: flex !important;
+    justify-content: space-evenly;
+    top: 50% ;
+    left: 50% ;
+    transform: translate(-50% , -50% );}
+    .header__main{
+      background-color: white !important; 
+      align-items: flex-end;       
+    }
+    .header1{
+      width: 100%;
+      height:11rem !important;
+    }
 }
 .btn:hover {
   transform: translateY(-3px);
@@ -452,44 +470,44 @@ textarea {
   font-weight: 600;
 }
 .contact__form-input::-moz-placeholder {
-  color: rgba(24, 22, 22, 0.747);
+  color: gray;
   font-weight: 600;
   font-size: 1.6rem;
 }
 .contact__form-input:-ms-input-placeholder {
-  color: rgb(34, 33, 33);
+  color: gray;
   font-weight: 600;
   font-size: 1.6rem;
 }
 .contact__form-input::placeholder {
-  color: rgb(34, 32, 32);
+  color: gray;
   font-weight: 600;
   font-size: 1.6rem;
 }
 .contact__form-input::-webkit-input-placeholder {
-  color: rgb(34, 32, 32);
+  color: gray;
   font-weight: 600;
   font-size: 1.6rem;
 }
 .contact__form-input:-ms-input-placeholder {
-  color: rgb(24, 22, 22);
+  color: gray;
   font-weight: 600;
   font-size: 1.6rem;
 }
 .contact__form-input::-ms-input-placeholder {
-  color: rgb(34, 32, 32);
+  color: gray;
   font-weight: 600;
   font-size: 1.6rem;
 }
 .contact__form-input:-moz-placeholder {
   opacity: 1;
-  color: rgb(26, 22, 22);
+  color: gray;
   font-weight: 600;
   font-size: 1.6rem;
 }
 .contact__form-input::-moz-placeholder {
   opacity: 1;
-  color: rgba(27, 25, 25, 0.849);
+  color: gray;
   font-weight: 600;
   font-size: 1.6rem;
 }
@@ -694,9 +712,10 @@ textarea {
 }
 @media only screen and (max-width: 56.25em) {
   .header__logo-img-cont {
-    width: 4.5rem;
-    height: 4.5rem;
-    margin-right: 1.2rem;
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden;
+    margin-right: 1.5rem;
   }
 }
 .header__logo-img {
@@ -746,7 +765,10 @@ textarea {
 @media only screen and (max-width: 37.5em) {
   .header__main-ham-menu-cont {
     display: block;
+    color: white;
+    float: right; 
   }
+  
 }
 .header__main-ham-menu {
   width: 100%;
@@ -1144,6 +1166,7 @@ ul.user li.sign-in a {
 .cards-section {
   display: flex;
   flex-flow: row;
+  overflow-y:auto;
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 80%;
@@ -1213,6 +1236,7 @@ ul.user li.sign-in a {
 .post-content {
   position: relative;
   display: flex;
+  height: max-content;
   padding: 0 6rem 0rem 4rem;
 }
 .descrption {
@@ -1335,4 +1359,44 @@ padding-left: 20px;
 text-align: left;
 color: orange;
 
+}
+.comments-section{
+  position: relative;
+  width: 90%;
+  height: auto;
+  margin:10px 20px 10px 10px;  
+}
+table{
+  background-color: #d9d9d9;
+}
+th{
+background-color:#fd961a ;
+color: white;
+font-size: 2rem;
+padding-right: 20px;
+
+}
+td{
+  border: black 1px solid;
+  background-color: #96907f;
+   font-size: 1.3rem;
+   padding-left: 10px;
+}
+.Actions{display: flex;
+justify-content:space-between;
+padding: 10px;
+gap: 20px;
+}
+.reply-icon{
+width: 32px;
+height: 32px;
+}
+.Users-Section{
+ 
+  position: relative;
+  display: block;
+  width: 90%;
+  height: auto;
+  padding:30px 20px 20px 20px;
+ justify-content:space-evenly;  
 }

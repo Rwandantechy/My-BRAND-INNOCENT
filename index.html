@@ -23,7 +23,7 @@
     <title>my-brand</title>
   </head>
   <body>
-    <div class="header1">
+    <header class="header">
       <div class="header__content">
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
@@ -35,8 +35,6 @@
           </div>
           <span class="heading-primary"> NIYONZIMA INNOCENT</span>
         </div>
-
-        <!-- TWO BUTTONS FOR SIGNING IN AND SIGNING UP STARTS HERE  -->
         <div class="two-button">
           <ul class="user">
             <li class="sign-in">
@@ -51,12 +49,14 @@
             </li>
           </ul>
         </div>
+       
       </div>
     </div>
     <!-- TWO BUTTONS FOR SIGNING IN AND SIGNING UP ENDS HERE  -->
 
     <!-- NAVIGATIONS STARTS HERE  -->
     <div class="header__main">
+      
       <ul class="header__links">
         <li class="header__link-wrapper">
           <a href="#home" class="header__link">Home</a>
@@ -75,14 +75,20 @@
         </li>
         <li class="header__link-wrapper">
           <a href="#contact-me" class="header__link">Contact me</a>
-        </li>
+        </li>       
       </ul>
+       <!-- TWO BUTTONS FOR SIGNING IN AND SIGNING UP STARTS HERE  -->
+        
       <!-- humberger menu for togglebutton -->
 
       <div class="header__main-ham-menu-cont">
-        <img src="images/humbergermenu.svg" />
         <img
-          src="images/ham-menu-close.svg"
+          src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg"
+          alt="hamburger menu"
+          class="header__main-ham-menu"
+        />
+        <img
+          src="https://d33wubrfki0l68.cloudfront.net/de2a681c8ca1630b29949b3a34bf158a686a0554/6a0ec/assets/svg/ham-menu-close.svg"
           alt="hamburger menu close"
           class="header__main-ham-menu-close d-none"
         />
@@ -111,7 +117,7 @@
           </ul>
         </div>
       </div>
-    </div>
+    </header>
     <!-- HUMBERGER MENU OF SMALL DEVICES SENDS -->
     <!-- MNAVIGATION MENU ENDS ERE  -->
 
@@ -511,5 +517,6 @@
       </div>
     </footer>
     <!-- FOOTER SECTION ENDS HERE -->
+  <script src="/JavaScript/main.js"></script>
   </body>
 </html>

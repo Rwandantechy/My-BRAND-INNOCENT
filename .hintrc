@@ -6,7 +6,13 @@
     "axe/text-alternatives": "off",
     "disown-opener": "off",
     "axe/forms": "off",
-    "axe/aria": "off"
+    "axe/aria": "off",
+    "axe/parsing": [
+      "off",
+      {
+        "marquee": "off"
+      }
+    ]
   },
   "browserslist": [
     "defaults",

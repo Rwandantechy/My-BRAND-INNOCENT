@@ -1,34 +1,39 @@
-/ International telephone format
-// $("#phone").intlTelInput();
-// get the country data from the plugin
-var countryData = window.intlTelInputGlobals.getCountryData(),
-  input = document.querySelector("#phone"),
-  addressDropdown = document.querySelector("#address-country");
+// ---
+const hamMenuBtn = document.querySelector('.header__main-ham-menu-cont')
+const smallMenu = document.querySelector('.header__sm-menu')
+const headerHamMenuBtn = document.querySelector('.header__main-ham-menu')
+const headerHamMenuCloseBtn = document.querySelector(
+  '.header__main-ham-menu-close'
+)
+const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link')
 
-// init plugin
-var iti = window.intlTelInput(input, {
-  hiddenInput: "full_phone",
-  utilsScript: "https://intl-tel-input.com/node_modules/intl-tel-input/build/js/utils.js?1549804213570" // just for formatting/placeholders etc
-});
+hamMenuBtn.addEventListener('click', () => {
+  if (smallMenu.classList.contains('header__sm-menu--active')) {
+    smallMenu.classList.remove('header__sm-menu--active')
+  } else {
+    smallMenu.classList.add('header__sm-menu--active')
+  }
+  if (headerHamMenuBtn.classList.contains('d-none')) {
+    headerHamMenuBtn.classList.remove('d-none')
+    headerHamMenuCloseBtn.classList.add('d-none')
+  } else {
+    headerHamMenuBtn.classList.add('d-none')
+    headerHamMenuCloseBtn.classList.remove('d-none')
+  }
+})
 
-// populate the country dropdown
-for (var i = 0; i < countryData.length; i++) {
-  var country = countryData[i];
-  var optionNode = document.createElement("option");
-  optionNode.value = country.iso2;
-  var textNode = document.createTextNode(country.name);
-  optionNode.appendChild(textNode);
-  addressDropdown.appendChild(optionNode);
+for (let i = 0; i < headerSmallMenuLinks.length; i++) {
+  headerSmallMenuLinks[i].addEventListener('click', () => {
+    smallMenu.classList.remove('header__sm-menu--active')
+    headerHamMenuBtn.classList.remove('d-none')
+    headerHamMenuCloseBtn.classList.add('d-none')
+  })
 }
-// set it's initial value
-addressDropdown.value = iti.getSelectedCountryData().iso2;
 
-// listen to the telephone input for changes
-input.addEventListener('countrychange', function(e) {
-  addressDropdown.value = iti.getSelectedCountryData().iso2;
-});
+// ---
+const headerLogoConatiner = document.querySelector('.header__logo-container')
 
-// listen to the address dropdown for changes
-addressDropdown.addEventListener('change', function() {
-  iti.setCountry(this.value);
-});
+headerLogoConatiner.addEventListener('click', () => {
+  location.href = '/'
+})
+;

@@ -1,0 +1,12 @@
+{
+     "javascript.referencesCodeLens.showOnAllFunctions": true,
+     "editor.tabSize": 2,
+     "editor.formatOnSave": true,
+     "editor.fontFamily": "'Droid Sans Mono'",
+     "editor.fontSize": 14,
+     "terminal.integrated.fontSize": 16,
+     "files.autoSave": "onFocusChange",
+     "terminal.integrated.lineHeight": 0,
+     "terminal.integrated.letterSpacing": 0,
+     "terminal.integrated.fontFamily": "monospace"
+}

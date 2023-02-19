@@ -1,0 +1,19 @@
+{
+  "name": "my-brand",
+  "version": "1.0.0",
+  "description": "this is my brand basically initial version of it",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rwandantechy/My-BRAND.git"
+  },
+  "author": "rwandantechy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rwandantechy/My-BRAND/issues"
+  },
+  "homepage": "https://github.com/Rwandantechy/My-BRAND#readme"
+}

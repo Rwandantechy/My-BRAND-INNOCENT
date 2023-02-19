@@ -1,19 +1,20 @@
 {
   "name": "my-brand",
   "version": "1.0.0",
-  "description": "this is my brand that is initially static without javascript",
-  "main": "index.html",
+  "description": "this is my brand basically initial version of it",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": " json-server --watch database/database.json"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Rwandantechy/my-brand.git"
+    "url": "git+https://github.com/Rwandantechy/My-BRAND.git"
   },
-  "author": "",
+  "author": "rwandantechy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Rwandantechy/my-brand/issues"
+    "url": "https://github.com/Rwandantechy/My-BRAND/issues"
   },
-  "homepage": "https://github.com/Rwandantechy/my-brand#readme"
+  "homepage": "https://github.com/Rwandantechy/My-BRAND#readme"
 }

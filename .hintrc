@@ -3,20 +3,18 @@
     "development"
   ],
   "hints": {
-    "axe/text-alternatives": "off",
-    "disown-opener": "off",
-    "axe/forms": "off",
-    "axe/aria": "off",
-    "axe/parsing": [
-      "off",
+    "axe/language": [
+      "default",
       {
-        "marquee": "off"
+        "html-has-lang": "off"
       }
-    ]
-  },
-  "browserslist": [
-    "defaults",
-    "not ie 11",
-    "not ios_saf <= 14.8"
-  ]
+    ],
+    "axe/text-alternatives": [
+      "default",
+      {
+        "document-title": "off"
+      }
+    ],
+    "disown-opener": "off"
+  }
 }

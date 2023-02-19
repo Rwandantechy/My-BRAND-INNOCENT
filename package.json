@@ -4,7 +4,8 @@
   "description": "this is my brand basically initial version of it",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": " json-server --watch database/database.json"
   },
   "repository": {
     "type": "git",

@@ -481,11 +481,11 @@ textarea {
   font-weight: 600;
   font-size: 1.6rem;
 }
-.contact__form-input:-ms-input-placeholder {
+/* .contact__form-input:-ms-input-placeholder {
   color: gray;
   font-weight: 600;
   font-size: 1.6rem;
-}
+} */
 .contact__form-input::placeholder {
   color: gray;
   font-weight: 600;
@@ -1320,7 +1320,7 @@ ul.user li.sign-in a {
 }
 .big-card-latest-articles {
   max-width:100%;
-  height: 100%;
+  height: fit-content;
   border-radius: 5px;
   background-color: #1d1d1d;
   border: #fd961a 2px solid;
@@ -1372,33 +1372,34 @@ marquee {
 .publisher-info-stats {
   position: relative;
   display: flex;
-  padding-left: 35px;
-  padding-right: 20px;
+  padding-left: 2%;
+  padding-right: 2%;
   justify-content: space-between;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: white;
 }
 .one-component {
   position: relative;
   gap: 0rem;
-  display: inline-flex;
+  display: flex;
 }
 .operation-articles {
   position: relative;
-  height: 9rem;
+  height: 10%;
+  padding: 2%;
   display: flex;
-  padding-top: 10rem;
+  padding-top: 10%;
   justify-content: space-between;
 }
 .icon-bg-color {
   background-color: #111;
-  width: 180px;
-  height: 64px;
-  border-radius: 10px;
+  max-width:5rem;
+  max-height:4rem;
+  border-radius: 10%;
 }
 .counter-up-down {
-  width: 230px;
-  height: 50px;
+  width:30%;
+  height: 25%;
   background-color: #2d2715;
   border-radius: 10px;
 }
@@ -1412,7 +1413,6 @@ marquee {
   position: relative;
   display: flex;
   justify-content: space-between;
-
   width: 86%;
 }
 .icon2 {
@@ -1496,7 +1496,27 @@ marquee {
   display: block;
   justify-content: center;
 }
-
+.back-icon{
+  transform: rotate(-180deg);
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 5px;
+}
+.next-icon{
+   margin-top: 20px;
+  background-color: white;
+  border-radius: 5px
+}
+.users-title-redirects{
+  display: flex;
+  justify-content: space-evenly;
+}
+.span-text{
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+margin-bottom: 4rem;
+}
 .blogs-section{
   position: relative;
   width: 100%;
@@ -1662,6 +1682,64 @@ td{
     grid-column: 1;
     grid-row: span 2;
   }
+.Updating-profile-section {
+  position: relative;
+  width: 100%;
+  display: block;
+  justify-content: center;
+}
+.all-articles-section{
+  width: 100%;
+  height: 100%;
+  margin-bottom:10% ;
+  font-size: 1rem;
+  align-items: center;
+}
+.counter-up-down{
+  display: none;
+}
+  .articles-heading  {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.stats-icons{
+  width: 28px !important;
+  height: 28px !important;
+  background-color: white;
+  border-radius: 5px;
+}
+.publisher-info-stats {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  color: white;
+}
+.next-previous {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.big-green-text{
+  font-size: 3rem;
+  background-color: white;
+  color: green;
+   padding: 10px;
+border-radius: 5px;
+box-shadow: #fd961a;
+}
+.big-red-text{
+   font-size: 3rem;
+  background-color: white;
+color: red;
+  padding: 10px;
+border-radius: 5px;
+box-shadow: #fd961a;
+
+}
 }
 .text-center {
   text-align: center;

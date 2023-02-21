@@ -4,22 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <link rel="stylesheet" href="/Admin-Panel-Responsive/css/globals.css" />
 
-    <link
-      rel="stylesheet"
-      href="/Admin-Panel-Responsive/css/accountSetting.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/6938257159.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://kit.fontawesome.com/6938257159.css"
-      crossorigin="anonymous"
-    />
 
+    
+  
     <link rel="stylesheet" href="/css/style.css" />
 
     <link
@@ -99,37 +87,51 @@
           Create your Article and get People's Feedbacks
         </h1>
         <div class="contact__form-container">
-          <form action="#" class="contact__form" method="post">
+          <form action="" class="contact__form " id="form-create-article" method="post">
             <input type="hidden" name="form-name" value="form 4" />
             <div class="contact__form-field fieldset-size">
               <input
-                required
                 type="text"
-                class="contact__form-input fieldset-size"
+                name="blogtitle"
+                required
+                class="contact__form-input "
                 placeholder="Enter the  Article Title"
-                name="name"
-                id="name"
               />
             </div>
             <div class="contact__form-field">
-              <fieldset>
-                <input
-                  type="file"
-                  name="picture"
-                  class="contact__form-input fieldset-size"
-                  id="picture"
-                />
-              </fieldset>
+              <input
+                type="date"
+                name="date"
+                class="contact__form-input"
+                placeholder="today date"
+              />
             </div>
-            <div class="contact__form-field fieldset-size">
+            <div class="contact__form-field">
+              <input
+                type="text"
+                class="contact__form-input "
+                name="thumbnailurl"
+                id="thumbnailurl"
+                placeholder="image url for a thumbnail"
+              />
+            </div>
+            <div class="contact__form-field">
+              <input
+                type="text"
+                name="author"
+                class="contact__form-input "
+                id="author-name"
+                placeholder="Your name"
+              />
+            </div>
+            <div class="contact__form-field ">
               <textarea
+                name="blogbody"
+                class="contact__form-input "
                 required
-                cols="30"
+                placeholder="Blog body"
+                cols="5"
                 rows="10"
-                class="contact__form-input fieldset-size"
-                placeholder="Type The descrIption of here Article"
-                name="message"
-                id="message"
               ></textarea>
             </div>
             <div class="comments-privelege">
@@ -139,19 +141,19 @@
                 <input
                   type="radio"
                   id="allowed"
-                  name="right-to-comment"
-                  value="allowed"
+                  name="comments"
+                  value="true"
                 />
-                  <label for="html">Yes</label>  
+                  <label for="yes">Yes</label>  
               </div>
               <div class="one-component">
                 <input
                   type="radio"
                   id="noright"
-                  name="right-to-comment"
-                  value="notallowed"
+                  name="comments"
+                  value="false"
                 />
-                  <label for="css">No</label>
+                  <label for="no">No</label>
               </div>
             </div>
             <button type="submit" class="btn btn--theme contact__btn">
@@ -256,6 +258,7 @@
         </div>
       </div>
     </footer>
+    <script src="/users/Javascript/createNewArticle.js"></script>
     <!-- FOOTER SECTION ENDS HERE -->
   </body>
 </html>

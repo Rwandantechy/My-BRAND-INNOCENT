@@ -1,0 +1,8 @@
+// javascript for details.html
+
+
+
+
+
+
+

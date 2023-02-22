@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon /Javascript/index.js",
     "start": " json-server --watch users/database/database.json"
   },
   "repository": {
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Rwandantechy/My-BRAND/issues"
   },
-  "homepage": "https://github.com/Rwandantechy/My-BRAND#readme"
+  "homepage": "https://github.com/Rwandantechy/My-BRAND#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
 }

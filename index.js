@@ -1,0 +1,1 @@
+// this is a main javascript  file that will eventually schronize everything 

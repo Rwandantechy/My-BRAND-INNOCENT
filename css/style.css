@@ -542,6 +542,21 @@ textarea {
   position: relative;
   min-height: 500px;
 }
+.big-red-text{
+   font-size: 3rem;
+  background-color: white;
+color: red;
+  padding: 10px;
+border-radius: 5px;
+box-shadow: #fd961a;}
+.big-green-text{
+  font-size: 3rem;
+  background-color: white;
+  color: green;
+   padding: 10px;
+border-radius: 5px;
+box-shadow: #fd961a;
+}
 @media only screen and (max-width: 37.5em) {
   .project-cs-hero {
     height: unset;

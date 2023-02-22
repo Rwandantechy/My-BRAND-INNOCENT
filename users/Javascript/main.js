@@ -1,16 +1,12 @@
-const container = document.querySelector('.all-articles-section');
-// const searchForm = document.querySelector('.search');
+const blogsection = document.querySelector(".all-articles-section");
+const renderBlog = async () => {
+  let uri = "https://lazy-puce-fawn-yoke.cyclic.app/blogs";
 
-const renderPosts = async (term) => {
-    let uri = 'http://localhost:3000/blogs';
-    // if (term) {
-    //     uri += `&q=${term}`;
-    // }
-    const res = await fetch(uri);
-    const blogs = await res.json();
-    let template = '   ';
-    blogs.forEach(blog=> {
-      template += `
+  const res = await fetch(uri);
+  const blogs = await res.json();
+  let template = "   ";
+  blogs.forEach((blog) => {
+    template += `
         <div class="big-card-latest-articles">
           <a href="/users/articles.html" class="latest-post-link">
 <h1 class="orange-big-text post-padding">
@@ -39,21 +35,15 @@ const renderPosts = async (term) => {
               <h2 class="orange-big-text">${blog.likes}</h2>
             </div>
           </div>
-          <div class="post-content">
-           <div class="projects__row-img-cont">
-              <img
-                src="${blog.thumbnailurl}"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
+          <div class="post-content">           
       <p class="descrption">              
-                ${blog.blogbody.slice(0, 200)}
+                ${blog.blogbody.slice(0, 500)}
         <span
                 class="orange-text"
                 >
-                <a href="articles.html?id=${ blog.id }">Read more...</a>           
+                <a href="articles.html?id=${
+                  blog.id
+                }">Read more...</a>           
                 
                 </span
               >
@@ -70,12 +60,8 @@ const renderPosts = async (term) => {
             </p>
             </div>
             </div>
-                  `
-    })
-    container.innerHTML += template;
-}
-// searchForm.addEventListener('submit', e => {
-//     e.preventDefault();
-//     renderPosts(searchForm.term.value.trim())
-// })
-window.addEventListener('DOMContentLoaded', () => renderPosts());
+                  `;
+  });
+  blogsection.innerHTML += template;
+};
+window.addEventListener("DOMContentLoaded", () =>renderBlog());

@@ -4,7 +4,9 @@ const container = document.querySelector('.details');
 const deleteBtn = document.querySelector('.delete');
 
 const renderDetails = async () => {
-    const res = await fetch(`http://localhost:3000/blogs/${id}`);
+    const res = await fetch(
+      `https://lazy-puce-fawn-yoke.cyclic.app/blogs/${id}`
+    );
     const blog = await res.json();
   
     const template = `   
@@ -13,16 +15,24 @@ const renderDetails = async () => {
   <span> ${blog.author} on ${ blog.date}</span>
   </h3> 
                <p>${blog.blogbody}</p>
-               <img src="${blog.thumbnailurl}">             
+               <img src="${blog.thumbnailurl}">  
+               <div class="projects__row-img-cont">
+              <img
+                src="${blog.thumbnailurl}"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>           
              
              `        
     container.innerHTML+= template;
 }
 deleteBtn.addEventListener('click', async (e) => {
     e.preventDefault();
-    await fetch(`http://localhost:3000/blogs/${id}`, {
-        method: 'DELETE'
+    await fetch(`https://lazy-puce-fawn-yoke.cyclic.app/blogs/${id}`, {
+      method: "DELETE",
     });
-    window.location.replace('/data/index.html');
+    window.location.replace('/users/articles.html');
 })
 window.addEventListener('DOMContentLoaded', () => renderDetails())

@@ -1,5 +1,5 @@
 :root {
-  /* fonts */
+  /* fonts that  I  have used throughout the project*/
   --font-titillium-web: "Titillium Web";
 
   /* font sizes */
@@ -8,17 +8,17 @@
   --font-size-base:25px;
   --font-size-lg: 30px;
 
-  /* Colors */
+  /* Colors  that  I  have used throughout the project*/
   --color-white: #fff;
   --color-gray-100: #2d2715;
   --color-gray-200: #1d1d1d;
   --color-black: #000;
-  --color-darkorange: #fd961a;
+   --color-darkorange: #fd961a;
 
   /* Gaps */
   --gap-md: 8px;
 
-  /* Paddings */
+  /* Paddings  that  I  have used throughout the project*/
   --padding-2xs: 2px;
   --padding-xs: 3px;
   --padding-sm: 5px;

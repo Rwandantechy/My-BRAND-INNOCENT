@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />    
+    <link rel="icon" type="image/x-icon" href="/images/profile-pic.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 
-    <title>my-brand</title>
+    <title>Innocent Niyonzima</title>
   </head>
-  <body>
+  <body>    
     <header class="header">
       <div class="header__content">
         <div class="header__logo-container">
@@ -27,7 +27,8 @@
           </div>
           <span class="heading-primary"> NIYONZIMA INNOCENT</span>
         </div>
-        <div class="two-button">
+        <!-- these two button are ignored in this current project -->
+        <!-- <div class="two-button">
           <ul class="user">
             <li class="sign-in">
               <a href="sign-in.html" class="btn btn-primary"
@@ -40,50 +41,53 @@
               >
             </li>
           </ul>
+        </div> -->
+        <!-- </div> -->
+        <!-- TWO BUTTONS FOR SIGNING IN AND SIGNING UP ENDS HERE  -->
+
+        <!-- NAVIGATIONS STARTS HERE  -->
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="#home" class="header__link">HOME</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="#About-me" class="header__link">ABOUT ME </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="#About-me" class="header__link">MY SKILLS</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="#projects" class="header__link">MY WORK</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="#blogs" class="header__link">BLOGS</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="#contact-me" class="header__link">CONTACT ME</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="/sign-in.html" class="header__link">LOGIN </a>
+            </li>
+          </ul>
+
+          <!-- TWO BUTTONS FOR SIGNING IN AND SIGNING UP STARTS HERE  -->
+
+          <!-- humberger menu for togglebutton -->
+
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="/images/humbergermenu.png"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/de2a681c8ca1630b29949b3a34bf158a686a0554/6a0ec/assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
         </div>
-       
-      </div>
-    </div>
-    <!-- TWO BUTTONS FOR SIGNING IN AND SIGNING UP ENDS HERE  -->
-
-    <!-- NAVIGATIONS STARTS HERE  -->
-    <div class="header__main">
-      
-      <ul class="header__links">
-        <li class="header__link-wrapper">
-          <a href="#home" class="header__link">Home</a>
-        </li>
-        <li class="header__link-wrapper">
-          <a href="#About-me" class="header__link">About me</a>
-        </li>
-        <li class="header__link-wrapper">
-          <a href="#About-me" class="header__link">my skills</a>
-        </li>
-        <li class="header__link-wrapper">
-          <a href="#projects" class="header__link">My work</a>
-        </li>
-        <li class="header__link-wrapper">
-          <a href="blogs.html" class="header__link">Blogs</a>
-        </li>
-        <li class="header__link-wrapper">
-          <a href="#contact-me" class="header__link">Contact me</a>
-        </li>       
-      </ul>
-       <!-- TWO BUTTONS FOR SIGNING IN AND SIGNING UP STARTS HERE  -->
-        
-      <!-- humberger menu for togglebutton -->
-
-      <div class="header__main-ham-menu-cont">
-        <img
-          src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg"
-          alt="hamburger menu"
-          class="header__main-ham-menu"
-        />
-        <img
-          src="https://d33wubrfki0l68.cloudfront.net/de2a681c8ca1630b29949b3a34bf158a686a0554/6a0ec/assets/svg/ham-menu-close.svg"
-          alt="hamburger menu close"
-          class="header__main-ham-menu-close d-none"
-        />
       </div>
       <div class="header__sm-menu">
         <div class="header__sm-menu-content">
@@ -92,19 +96,22 @@
               <a href="#home"> Home </a>
             </li>
             <li class="header__sm-menu-link">
-              <a href="#About-me" class="header__link">About me</a>
+              <a href="#About-me" class="header__link">About Me</a>
             </li>
             <li class="header__sm-menu-link">
-              <a href="#About-me">my skills</a>
+              <a href="#About-me">My Skills</a>
             </li>
             <li class="header__sm-menu-link">
-              <a href="#projects">My work</a>
+              <a href="#projects">My Work</a>
             </li>
             <li class="header__sm-menu-link">
-              <a href="Blogs.html">Blogs</a>
+              <a href="#blogs">Blogs</a>
             </li>
             <li class="header__sm-menu-link">
-              <a href="#contact-me">Contact me</a>
+              <a href="#contact-me">Contact Me</a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="sign-in.html">Login</a>
             </li>
           </ul>
         </div>
@@ -134,13 +141,16 @@
       <div class="home-hero__socials">
         <div class="home-hero__social">
           <a
-            href="https://facebook.com/in/rwandantechy"
+            href="https://facebook.com/in/Rwandan Techy"
             class="home-hero__social-icon-link"
             rel="noreferrer"
             target="_blank"
           >
-            <img src="images/facebook.svg" alt="Innocent NIYONZIMA Logo Image"
-            class=" class="home-hero__social-icon"/>
+            <img
+              src="images/facebook.svg"
+              alt="Innocent NIYONZIMA Logo Image"
+              class="home-hero__social-icon"
+            />
           </a>
         </div>
         <div class="home-hero__social">
@@ -150,8 +160,11 @@
             rel="noreferrer"
             target="_blank"
           >
-            <img src="images/instagram.svg" alt="Innocent's instagram Account"
-            class=" class="home-hero__social-icon" />
+            <img
+              src="images/instagram.svg"
+              alt="Innocent's instagram Account"
+              class="home-hero__social-icon"
+            />
           </a>
         </div>
         <div class="home-hero__social">
@@ -371,6 +384,118 @@
       </div>
     </section>
     <!-- TPROJECTS SECTION ENDS HERE -->
+    <!-- blogs section starts here  -->
+    <section id="blogs" class="all-blogs-container small-pad">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Blogs</span>
+        <span class="heading-sec__sub">
+          checkout our latest blogs and if it feel like you say something leave
+          your comment and like it if it impresses you!
+        </span>
+      </h2>
+
+      <div class="blogs-section">
+        <div class="big-card-latest-articles">
+          >
+          <a href="/blog1.html" class="latest-post-link">
+            <h1 class="orange-big-text post-padding">
+              MIT ENGINEERS HAVE DISCOVERED LEGO-LIKE AI CHIP
+            </h1>
+          </a>
+          <div class="post-content">
+            <div class="projects__row-img-cont">
+              <img
+                src="/images/image3.jpg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+
+            <p class="descrption">
+              necessitatibus perspiciatis, nulla placeat quisquam earum quam
+              totam similique nemo maxime vel sapiente voluptate, ullam in
+              praesentium fugiat.Corrupti, nisi? Provident voluptate et
+              distinctio! Minus, numquam commodi, eligendi dolor maxime sapiente
+              saepe provident vel placeat ex accusantium error? Vitae sint ea
+              dolores necessitatibus perspiciatis, nulla placeat quisquam earum
+              quam totam similique nemo maxime vel sapiente voluptate, ullam in
+              praesentium fugiat. Ut nobis repudiandae omnis quaerat totam<a
+                href="blog1.html"
+                class="orange-text"
+                >READMORE</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="big-card-latest-articles">
+          <a href="/blog3.html" class="latest-post-link">
+            <h1 class="orange-big-text post-padding">
+              MIT ENGINEERS HAVE DISCOVERED LEGO-LIKE AI CHIP
+            </h1>
+          </a>
+          <div class="post-content">
+            <div class="projects__row-img-cont">
+              <img
+                src="/images/image3.jpg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+
+            <p class="descrption">
+              necessitatibus perspiciatis, nulla placeat quisquam earum quam
+              totam similique nemo maxime vel sapiente voluptate, ullam in
+              praesentium fugiat.Corrupti, nisi? Provident voluptate et
+              distinctio! Minus, numquam commodi, eligendi dolor maxime sapiente
+              saepe provident vel placeat ex accusantium error? Vitae sint ea
+              dolores necessitatibus perspiciatis, nulla placeat quisquam earum
+              quam totam similique nemo maxime vel sapiente voluptate, ullam in
+              praesentium fugiat. Ut nobis repudiandae omnis quaerat totam<a
+                href="blog1.html"
+                class="orange-text"
+                >READMORE</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="big-card-latest-articles">
+          <a href="/blog3.html" class="latest-post-link">
+            <h1 class="orange-big-text post-padding">
+              MIT ENGINEERS HAVE DISCOVERED LEGO-LIKE AI CHIP
+            </h1>
+          </a>
+          <div class="post-content">
+            <div class="projects__row-img-cont">
+              <img
+                src="/images/image3.jpg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+
+            <p class="descrption">
+              necessitatibus perspiciatis, nulla placeat quisquam earum quam
+              totam similique nemo maxime vel sapiente voluptate, ullam in
+              praesentium fugiat.Corrupti, nisi? Provident voluptate et
+              distinctio! Minus, numquam commodi, eligendi dolor maxime sapiente
+              saepe provident vel placeat ex accusantium error? Vitae sint ea
+              dolores necessitatibus perspiciatis, nulla placeat quisquam earum
+              quam totam similique nemo maxime vel sapiente voluptate, ullam in
+              praesentium fugiat. Ut nobis repudiandae omnis quaerat totam<a
+                href="blog1.html"
+                class="orange-text"
+                >READMORE</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blogs sections ends here  -->
+
     <!-- CONTACT SECTION  STARTS HERE -->
     <section id="contact-me" class="contact sec-pad dynamicBg">
       <div class="main-container">
@@ -508,7 +633,7 @@
         </div>
       </div>
     </footer>
+    <script src="/javaScript/main.js"></script>
     <!-- FOOTER SECTION ENDS HERE -->
-  <script src="/JavaScript/main.js"></script>
   </body>
 </html>

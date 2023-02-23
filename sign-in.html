@@ -5,21 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" type="image/x-icon" href="/images/profile-pic.png" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>my-brand</title>
+    <title>Innocent Niyonzima</title>
   </head>
   <body>
-    <div class="header1">
+    <header class="header">
       <div class="header__content">
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
@@ -31,57 +30,64 @@
           </div>
           <span class="heading-primary"> NIYONZIMA INNOCENT</span>
         </div>
-
-        <!-- TWO BUTTONS FOR SIGNING IN AND SIGNING UP STARTS HERE  -->
-        <div class="two-button">
+        <!-- these two button are ignored in this current project -->
+        <!-- <div class="two-button">
           <ul class="user">
             <li class="sign-in">
-              <a href="/sign-in.html" class="btn btn-primary"
+              <a href="sign-in.html" class="btn btn-primary"
                 ><i class="fa fa-user"></i> LOGIN</a
               >
             </li>
             <li class="sign-up">
-              <a href="/sign-up.html" class="btn btn-primary"
+              <a href="sign-up.html" class="btn btn-primary"
                 ><i class="fa fa-user-plus"></i>SIGN UP</a
               >
             </li>
           </ul>
+        </div> -->
+        <!-- </div> -->
+        <!-- TWO BUTTONS FOR SIGNING IN AND SIGNING UP ENDS HERE  -->
+
+        <!-- NAVIGATIONS STARTS HERE  -->
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="#home" class="header__link">HOME</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="#About-me" class="header__link">ABOUT ME </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="#About-me" class="header__link">MY SKILLS</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="#projects" class="header__link">MY WORK</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="#blogs" class="header__link">BLOGS</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="#contact-me" class="header__link">CONTACT ME</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="/sign-in.html" class="header__link">LOGIN </a>
+            </li>
+          </ul>
+
+          <!-- TWO BUTTONS FOR SIGNING IN AND SIGNING UP STARTS HERE  -->
+
+          <!-- humberger menu for togglebutton -->
+
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="/images/humbergermenu.png"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img src="images/humbergerclose.png" " alt="hamburger menu close"
+            class="header__main-ham-menu-close d-none" />
+          </div>
         </div>
-      </div>
-    </div>
-    <!-- TWO BUTTONS FOR SIGNING IN AND SIGNING UP ENDS HERE  -->
-
-    <!-- NAVIGATIONS STARTS HERE  -->
-    <div class="header__main">
-      <ul class="header__links">
-        <li class="header__link-wrapper">
-          <a href="/index.html" class="header__link">Home</a>
-        </li>
-        <li class="header__link-wrapper">
-          <a href="/index.html" class="header__link">About me</a>
-        </li>
-        <li class="header__link-wrapper">
-          <a href="/index.html" class="header__link">my skills</a>
-        </li>
-        <li class="header__link-wrapper">
-          <a href="/index.html" class="header__link">My work</a>
-        </li>
-        <li class="header__link-wrapper">
-          <a href="Blogs.html" class="header__link">Blogs</a>
-        </li>
-        <li class="header__link-wrapper">
-          <a href="./index.html" class="header__link">Contact me</a>
-        </li>
-      </ul>
-      <!-- humberger menu for togglebutton -->
-
-      <div class="header__main-ham-menu-cont">
-        <img src="images/humbergermenu.svg" />
-        <img
-          src="images/ham-menu-close.svg"
-          alt="hamburger menu close"
-          class="header__main-ham-menu-close d-none"
-        />
       </div>
       <div class="header__sm-menu">
         <div class="header__sm-menu-content">
@@ -90,42 +96,41 @@
               <a href="#home"> Home </a>
             </li>
             <li class="header__sm-menu-link">
-              <a href="#About-me" class="header__link">About me</a>
+              <a href="#About-me" class="header__link">About Me</a>
             </li>
             <li class="header__sm-menu-link">
-              <a href="#About-me">my skills</a>
+              <a href="#About-me">My Skills</a>
             </li>
             <li class="header__sm-menu-link">
-              <a href="#projects">My work</a>
+              <a href="#projects">My Work</a>
             </li>
             <li class="header__sm-menu-link">
-              <a href="Blogs.html">Blogs</a>
+              <a href="#blogs">Blogs</a>
             </li>
             <li class="header__sm-menu-link">
-              <a href="#contact-me">Contact me</a>
+              <a href="#contact-me">Contact Me</a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="sign-in.html">Login</a>
             </li>
           </ul>
         </div>
       </div>
-    </div>
+    </header>
     <!-- HUMBERGER MENU OF SMALL DEVICES SENDS -->
     <!-- MNAVIGATION MENU ENDS ERE  -->
     <!-- SIGN IN SECTION -->
     <section class="sign-content">
       <div class="left-division">
-        <div class="welcomme-image">
-          <img
-            src="/images/WELCOMEIMAGE.svg"
-            alt="Welcome image"
-            class="Welcome-image"
-            width="400px"
-            height="400px"
-          />
-        </div>
+        <img
+          src="/images/WELCOMEIMAGE.svg"
+          alt="Welcome image"
+          class="Welcome-image"
+        />
       </div>
       <div class="right-division">
         <div class="signin-header">
-          <h1 class="title1">SIGN IN WITH</h1>
+          <h2 class="title1">SIGN IN WITH</h2>
           <span class="sign-in__socials">
             <a
               href="https://facebook.com/in/rwandantechy"
@@ -174,8 +179,12 @@
         <span class="orcrossingborder">or</span>
         <!-- sign in form secction starts here -->
         <div class="contact__form-container">
-          <form action="/users/index.html" class="contact__form" method="post">
-            <input type="hidden" name="form-name" value="form 1" />
+          <form
+            action="/users/index.html"
+            class="sign-in form__form"
+            method="post"
+          >
+            <input type="hidden" name="form-name" value="form-signin" />
             <div class="contact__form-field">
               <input
                 required
@@ -311,6 +320,6 @@
       </div>
     </footer>
     <!-- FOOTER SECTION ENDS HERE -->
-    <!-- <script src="/JavaScript/main.js"></script> -->
+    <script src="/javaScript/main.js"></script>
   </body>
 </html>

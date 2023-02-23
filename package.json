@@ -2,7 +2,7 @@
   "name": "my-brand",
   "version": "1.0.0",
   "description": "this is my brand basically initial version of it",
-  "main": "index.js",
+  "main": "/database/js/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "devStart": "nodemon index.js",

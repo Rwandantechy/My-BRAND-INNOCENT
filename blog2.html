@@ -15,7 +15,7 @@
     <title>Innocent NIYONZIMA</title>
   </head>
   <body>
-    <div class="header1">
+    <header class="header">
       <div class="header__content">
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
@@ -25,59 +25,51 @@
               class="header__logo-img"
             />
           </div>
-          <span class="heading-primary">NIYONZIMA INNOCENT</span>
+          <span class="heading-primary"> NIYONZIMA INNOCENT</span>
         </div>
-
-        <!-- TWO BUTTONS FOR SIGNING IN AND SIGNING UP STARTS HERE  -->
-        <div class="two-button">
-          <ul class="user">
-            <li class="sign-in">
-              <a href="/sign-in.html" class="btn btn-primary"
-                ><i class="fa fa-user"></i> LOGIN</a
-              >
+        <!-- NAVIGATIONS STARTS HERE  -->
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="#home" class="header__link">HOME</a>
             </li>
-            <li class="sign-up">
-              <a href="/sign-up.html" class="btn btn-primary"
-                ><i class="fa fa-user-plus"></i>SIGN UP</a
-              >
+            <li class="header__link-wrapper">
+              <a href="#About-me" class="header__link">ABOUT ME </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="#About-me" class="header__link">MY SKILLS</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="#projects" class="header__link">MY WORK</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="#blogs" class="header__link">BLOGS</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="#contact-me" class="header__link">CONTACT ME</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="/sign-in.html" class="header__link">LOGIN </a>
             </li>
           </ul>
+
+          <!-- TWO BUTTONS FOR SIGNING IN AND SIGNING UP STARTS HERE  -->
+
+          <!-- humberger menu for togglebutton -->
+
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="/images/humbergermenu.png"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/de2a681c8ca1630b29949b3a34bf158a686a0554/6a0ec/assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
         </div>
-      </div>
-    </div>
-    <!-- TWO BUTTONS FOR SIGNING IN AND SIGNING UP ENDS HERE  -->
-
-    <!-- NAVIGATIONS STARTS HERE  -->
-    <div class="header__main">
-      <ul class="header__links">
-        <li class="header__link-wrapper">
-          <a href="/index.html" class="header__link">Home</a>
-        </li>
-        <li class="header__link-wrapper">
-          <a href="/index.html" class="header__link">About me</a>
-        </li>
-        <li class="header__link-wrapper">
-          <a href="index.html" class="header__link">my skills</a>
-        </li>
-        <li class="header__link-wrapper">
-          <a href="index.html" class="header__link">My work</a>
-        </li>
-        <li class="header__link-wrapper">
-          <a href="/blogs.html" class="header__link">Blogs</a>
-        </li>
-        <li class="header__link-wrapper">
-          <a href="#contact-me" class="header__link">Contact me</a>
-        </li>
-      </ul>
-      <!-- humberger menu for togglebutton -->
-
-      <div class="header__main-ham-menu-cont">
-        <img src="images/humbergermenu.svg" />
-        <img
-          src="images/ham-menu-close.svg"
-          alt="hamburger menu close"
-          class="header__main-ham-menu-close d-none"
-        />
       </div>
       <div class="header__sm-menu">
         <div class="header__sm-menu-content">
@@ -86,26 +78,27 @@
               <a href="#home"> Home </a>
             </li>
             <li class="header__sm-menu-link">
-              <a href="#About-me" class="header__link">About me</a>
+              <a href="#About-me"> About Me</a>
             </li>
             <li class="header__sm-menu-link">
-              <a href="#About-me">my skills</a>
+              <a href="#About-me">My Skills</a>
             </li>
             <li class="header__sm-menu-link">
-              <a href="#projects">My work</a>
+              <a href="#projects">My Work</a>
             </li>
             <li class="header__sm-menu-link">
-              <a href="blogs.html">Blogs</a>
+              <a href="#blogs">Blogs</a>
             </li>
             <li class="header__sm-menu-link">
-              <a href="#contact-me">Contact me</a>
+              <a href="#contact-me">Contact Me</a>
+            </li>
+            <li class="header__sm-menu-link">
+              <a href="sign-in.html">Login</a>
             </li>
           </ul>
         </div>
       </div>
-    </div>
-    <!-- HUMBERGER MENU OF SMALL DEVICES SENDS -->
-    <!-- MNAVIGATION MENU ENDS ERE  -->
+    </header>
 
     <section class="all-blogs-container">
       <br /><br /><br />
@@ -175,7 +168,9 @@
               unde nam!
             </footer>
             <div class="small-pad orange-big-text">
-            <span class="one-component"></span>  like the blog  &nbsp; <img src="images/thumbs-up.png" /></span>
+              <span class="one-component">
+                like the blog &nbsp; <img src="images/thumbs-up.png"
+              /></span>
             </div>
           </div>
         </div>

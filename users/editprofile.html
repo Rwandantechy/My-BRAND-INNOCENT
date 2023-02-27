@@ -3,23 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-
-    <link rel="stylesheet" href="/Admin-Panel-Responsive/css/globals.css" />
-
-    <link
-      rel="stylesheet"
-      href="/Admin-Panel-Responsive/css/accountSetting.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/6938257159.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://kit.fontawesome.com/6938257159.css"
-      crossorigin="anonymous"
-    />
-
     <link rel="stylesheet" href="/css/style.css" />
 
     <link
@@ -95,12 +78,22 @@
         </div>
       </aside>
       <section class="Updating-profile-section">
-        <h1 class="orange-big-text project-article-title">
-            <a href="/users/index.html">
-              <img src="/images/next.svg" alt="back "  class="back-icon next-icon" width="28" height="28">GO BACK
-            </a> 
-            You can now Update your Profile as per your wish. 
-        </h1>
+        <div class="back-and-text">
+          <a href="/users/index.html">
+            <img
+              src="/images/next.svg"
+              alt="back "
+              class="back-icon"
+              width="28"
+              height="28"
+            />
+            <span class="orange-text center-text-small">GO BACK</span>
+          </a>
+           </div>
+          <h2 class="orange-big-text center-text">
+            <span>You can now Update your Profile as per your wish. </span>
+          </h2>
+       
         <div class="contact__form-container">
           <form action="#" class="contact__form" method="post">
             <input type="hidden" name="form-name" value="form 5" />
@@ -108,52 +101,51 @@
               <input
                 required
                 type="text"
-                class="contact__form-input fieldset-size"
+                class="contact__form-input "
                 placeholder="Enter your Username"
                 name="Username"
                 id="username"
               />
             </div>
-            <div class="contact__form-field fieldset-size">
+            <div class="contact__form-field">
               <input
                 required
                 type="password"
-                class="contact__form-input fieldset-size"
+                class="contact__form-input "
                 placeholder="Enter your New Password"
                 name="newpassword"
                 id="newpasssword"
               />
             </div>
-            <div class="contact__form-field fieldset-size">
+            <div class="contact__form-field ">
               <input
                 required
                 type="password"
-                class="contact__form-input fieldset-size"
+                class="contact__form-input "
                 placeholder="Confirm Your Password"
                 name="confirmpassword"
                 id="confirmpassword"
               />
             </div>
             <div class="contact__form-field">
-              <fieldset>
-                <input
-                  type="file"
-                  name="picture"
-                  class="contact__form-input fieldset-size"
-                  id="picture"
-                />
-              </fieldset>
+              <input
+                type="text"
+                name="picture"
+                class="contact__form-input "
+                placeholder="enter your profile image url"
+                id="picture"
+              />
             </div>
             <div class="two-post-cancel">
-                      
-              <button type="submit" class="btn btn--theme contact__btn btn-scaling">
+              <button
+                type="submit"
+                class="btn btn--theme contact__btn btn-scaling"
+              >
                 Submit
               </button>
             </div>
           </form>
-          <a href="">
-            
-          </a>
+          <a href=""> </a>
         </div>
       </section>
     </section>

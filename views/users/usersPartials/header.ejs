@@ -1,0 +1,36 @@
+<header class="header-section">
+  <div class="header-section-elements">
+    <div class="profile-pic">
+      <img
+        src="/images/profile-pic.png"
+        alt="Profile photo for an admin user"
+      />
+    </div>
+    <span class="admin-name">Innocent</span>
+
+    <img
+      src="/images/setting-icon.png"
+      alt="setting-icon"
+      class="setting-account"
+      onclick="accountSettings()"
+    />
+    <div class="settings" id="settingid">
+      <div class="profile-parent">
+        <img
+          src="/images/close.png"
+          alt="close icon"
+          class="cancel-icon"
+          onclick="closesettings()"
+        /><br />
+        <a href="/users/editprofile.html" class="one-component">
+          <img alt="" src="/images/editprofile.png" /><span>Edit Profile</span>
+        </a>
+        <br /><br />
+        <a href="#" class="one-component">
+          <img class="logout-1-icon" alt="" src="/images/logout.png" />
+          <span>Logout</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>

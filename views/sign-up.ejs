@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--===================HEAD PARTIAL INCLUDED HERE==========================================-->
+  <%- include("./partials/head.ejs") %>
+  <script src="/users/Javascript/main.js"></script>
+  <body>
+    <!--=====================HEADER PART STARTS HERE =======================================-->
+    <%- include("./partials/header.ejs") %>
+
+    <!--==================HEADER SECTION ENDS HERE========================================-->
+
+    <section class="sign-up-section">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main heading-sec__main--lt"
+          >GET
+          <span class="orange-text">started</span>
+        </span>
+
+        <span class="heading-sec__sub heading-sec__sub--lt">
+          Open account for free and start a great journey with us now!
+        </span>
+      </h2>
+      <div class="contact__form-container">
+        <form action="#" class="contact__form" method="post">
+          <input type="hidden" name="form-name" value="form 1" />
+
+          <div class="contact__form-field">
+            <input
+              required
+              type="text"
+              class="contact__form-input"
+              placeholder="UserName"
+              name="username"
+              id="username"
+            />
+          </div>
+          <div class="contact__form-field">
+            <input
+              required
+              type="text"
+              class="contact__form-input"
+              placeholder="FirstName"
+              name="firstname"
+              id="firstname"
+            />
+          </div>
+          <div class="contact__form-field">
+            <input
+              required
+              type="text"
+              class="contact__form-input"
+              placeholder="LastName"
+              name="lastname"
+              id="lastname"
+            />
+          </div>
+          <div class="contact__form-field">
+            <input
+              required
+              type="email"
+              class="contact__form-input"
+              placeholder="Email Address"
+              name="emailaddress"
+              id="email"
+            />
+          </div>
+          <div class="contact__form-field">
+            <input
+              required
+              type="password"
+              class="contact__form-input"
+              placeholder="Password"
+              name="password"
+              id="password"
+            />
+          </div>
+          <div class="contact__form-field">
+            <input
+              required
+              type="password"
+              class="contact__form-input"
+              placeholder="Confirm Password"
+              name="confirm-password"
+              id="confirm-password"
+            />
+          </div>
+
+          <div class="contact__form-field">
+            <input
+              class="contact__form-input"
+              type="tel"
+              id="phone"
+              placeholder="Phone number e.g. +1 702 123 4567"
+            />
+          </div>
+          <div class="contact__form-field">
+            <select class="contact__form-input" name="gender" id="gender">
+              <option value="" disabled selected hidden>Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="other">Other</option>
+              <option value="not-to-say">Rather not to say</option>
+            </select>
+          </div>
+          <div class="redirect-links">
+            <button
+              type="submit"
+              class="right-redirect-btn btn btn--med btn--theme project-details__links-btn"
+            >
+              Submit
+            </button>
+            <h1 class="left-redirect-part">
+              <a class="orange-text" href="index.html"> HOME</a>
+              <span class="resized-text"> Already have an account? </span
+              ><a class="orange-text" href="sign-in.html">SIGN IN.</a>
+            </h1>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!--========================= FOOTER PART STARTS HERE ================================-->
+    <%- include("./partials/footer.ejs") %>
+    <!--========================= FOOTER PART ENDS HERE ==================================-->
+
+    <!-- FOOTER SECTION ENDS HERE -->
+  </body>
+</html>

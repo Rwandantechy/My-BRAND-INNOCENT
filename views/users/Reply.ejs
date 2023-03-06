@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--=================HEAD PART STARTS HERE==============================-->
+  <%- include("./usersPartials/head.ejs")%>
+  <!--=========================HEAD SECTION ENDS HERE=====================-->
+  <body>
+    <!--========================HEADER SECTION STARTS HERE=================-->
+    <%- include("./usersPartials/header.ejs")%>
+    <!--========================HEADER SECTION ENDS HERE====================-->
+    <section class="content-section-admin">
+      <aside class="side-menu-section">
+        <div class="menu-item">
+          <a href="/users/index.html" class="menu-link">
+            <img
+              class="menu-icon"
+              src="/images/dashboard.png"
+              alt="dashboard Icon"
+            />
+            <h2 class="menu-title">Dashboard</h2></a
+          >
+        </div>
+        <div class="menu-item">
+          <a href="/users/users.html" class="menu-link">
+            <img class="menu-icon" src="/images/users.png" alt="Users Icon" />
+            <h2 class="menu-title">All Users</h2></a
+          >
+        </div>
+        <div class="menu-item">
+          <a href="/users/projects.html" class="menu-link">
+            <img
+              class="menu-icon"
+              src="/images/projects.png"
+              alt="Projects Icon"
+            />
+            <h2 class="menu-title">Projects</h2></a
+          >
+        </div>
+        <div class="menu-item">
+          <a href="/users/articles.html" class="menu-link">
+            <img
+              class="menu-icon"
+              src="/images/articles.png"
+              alt="Articles Icon"
+            />
+            <h2 class="menu-title">Articles</h2></a
+          >
+        </div>
+
+        <div class="menu-item">
+          <a href="/users/comments.html" class="menu-link">
+            <img
+              class="menu-icon"
+              src="/images/comments.png"
+              alt="Comments Icon"
+            />
+            <h2 class="menu-title">Comments</h2></a
+          >
+        </div>
+      </aside>
+
+      <div class="comments-section">
+        <div class="contact__form-container">
+          <form action="#" class="contact__form" method="post">
+            <input type="hidden" name="form-name" value="form 4" />
+
+            <div class="contact__form-field fieldset-size">
+              <label for="replyto" class="orange-big-text reply">
+                Reply to:
+              </label>
+              <input
+                required
+                type="text"
+                class="contact__form-input fieldset-size pading-reply"
+                value="niyinnocent2027@gmail.com"
+                name="name"
+                id="name"
+              />
+            </div>
+
+            <div class="contact__form-field fieldset-size">
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input fieldset-size"
+                placeholder="Type Reply here"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <div class="two-post-cancel">
+              <button type="submit" class="btn btn--theme contact__btn">
+                Cancel
+              </button>
+              <button type="submit" class="btn btn--theme contact__btn">
+                Post
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!--==========================FOOTER PART STARTS HERE=====================-->
+    <%- include("./usersPartials/footer.ejs")%>
+    <!--=========================FOOTER SECTION ENDS HERE=====================-->
+
+    <script src="/users/Javascript/main.js"></script>
+  </body>
+</html>

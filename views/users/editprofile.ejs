@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--=================HEAD PART STARTS HERE==============================-->
+  <%- include("./usersPartials/head.ejs")%>
+  <!--=========================HEAD SECTION ENDS HERE=====================-->
+  <body>
+    <!--========================HEADER SECTION STARTS HERE=================-->
+    <%- include("./usersPartials/header.ejs")%>
+    <!--========================HEADER SECTION ENDS HERE====================-->
+
+    <section class="content-section-admin">
+      <aside class="side-menu-section">
+        <div class="menu-item">
+          <a href="/users/index.html" class="menu-link">
+            <img
+              class="menu-icon"
+              src="/images/dashboard.png"
+              alt="dashboard Icon"
+            />
+            <h2 class="menu-title">Dashboard</h2></a
+          >
+        </div>
+        <div class="menu-item">
+          <a href="/users/users.html" class="menu-link">
+            <img class="menu-icon" src="/images/users.png" alt="Users Icon" />
+            <h2 class="menu-title">All Users</h2></a
+          >
+        </div>
+        <div class="menu-item">
+          <a href="/users/projects.html" class="menu-link">
+            <img
+              class="menu-icon"
+              src="/images/projects.png"
+              alt="Projects Icon"
+            />
+            <h2 class="menu-title">Projects</h2></a
+          >
+        </div>
+        <div class="menu-item">
+          <a href="/users/articles.html" class="menu-link">
+            <img
+              class="menu-icon"
+              src="/images/articles.png"
+              alt="Articles Icon"
+            />
+            <h2 class="menu-title">Articles</h2></a
+          >
+        </div>
+
+        <div class="menu-item">
+          <a href="/users/comments.html" class="menu-link">
+            <img
+              class="menu-icon"
+              src="/images/comments.png"
+              alt="Comments Icon"
+            />
+            <h2 class="menu-title">Comments</h2></a
+          >
+        </div>
+      </aside>
+      <section class="Updating-profile-section">
+        <h1 class="orange-big-text project-article-title">
+          <a href="/users/index.html">
+            <img
+              src="/images/next.svg"
+              alt="back "
+              class="back-icon next-icon"
+              width="28"
+              height="28"
+            />GO BACK
+          </a>
+          You can now Update your Profile as per your wish.
+        </h1>
+        <div class="contact__form-container">
+          <form action="#" class="contact__form" method="post">
+            <input type="hidden" name="form-name" value="form 5" />
+            <div class="contact__form-field fieldset-size">
+              <input
+                required
+                type="text"
+                class="contact__form-input fieldset-size"
+                placeholder="Enter your Username"
+                name="Username"
+                id="username"
+              />
+            </div>
+            <div class="contact__form-field fieldset-size">
+              <input
+                required
+                type="password"
+                class="contact__form-input fieldset-size"
+                placeholder="Enter your New Password"
+                name="newpassword"
+                id="newpasssword"
+              />
+            </div>
+            <div class="contact__form-field fieldset-size">
+              <input
+                required
+                type="password"
+                class="contact__form-input fieldset-size"
+                placeholder="Confirm Your Password"
+                name="confirmpassword"
+                id="confirmpassword"
+              />
+            </div>
+            <div class="contact__form-field">
+              <fieldset>
+                <input
+                  type="file"
+                  name="picture"
+                  class="contact__form-input fieldset-size"
+                  id="picture"
+                />
+              </fieldset>
+            </div>
+            <div class="two-post-cancel">
+              <button
+                type="submit"
+                class="btn btn--theme contact__btn btn-scaling"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+          <a href=""> </a>
+        </div>
+      </section>
+    </section>
+    <!--==========================FOOTER PART STARTS HERE=====================-->
+    <%- include("./usersPartials/footer.ejs")%>
+    <!--=========================FOOTER SECTION ENDS HERE=====================-->
+  </body>
+</html>

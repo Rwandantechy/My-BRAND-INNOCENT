@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html l ang="en">
+  <!--=================HEAD PART STARTS HERE==============================-->
+  <%- include("./usersPartials/head.ejs")%>
+  <!--=========================HEAD SECTION ENDS HERE=====================-->
+  <body>
+  <!--========================HEADER SECTION STARTS HERE=================-->
+    <%- include("./usersPartials/header.ejs")%>
+  <!--========================HEADER SECTION ENDS HERE====================-->
+
+    <section class="content-section-admin">
+      <aside class="side-menu-section">
+        <div class="menu-item">
+          <a href="/users/index.html" class="menu-link">
+            <img
+              class="menu-icon"
+              src="/images/dashboard.png"
+              alt="dashboard Icon"
+            />
+            <h2 class="menu-title">Dashboard</h2></a
+          >
+        </div>
+        <div class="menu-item">
+          <a href="/users/users.html" class="menu-link">
+            <img class="menu-icon" src="/images/users.png" alt="Users Icon" />
+            <h2 class="menu-title">All Users</h2></a
+          >
+        </div>
+        <div class="menu-item">
+          <a href="/users/projects.html" class="menu-link">
+            <img
+              class="menu-icon"
+              src="/images/projects.png"
+              alt="Projects Icon"
+            />
+            <h2 class="menu-title">Projects</h2></a
+          >
+        </div>
+        <div class="menu-item">
+          <a href="/users/articles.html" class="menu-link">
+            <img
+              class="menu-icon"
+              src="/images/articles.png"
+              alt="Articles Icon"
+            />
+            <h2 class="menu-title">Articles</h2></a
+          >
+        </div>
+
+        <div class="menu-item">
+          <a href="/users/comments.html" class="menu-link">
+            <img
+              class="menu-icon"
+              src="/images/comments.png"
+              alt="Comments Icon"
+            />
+            <h2 class="menu-title">Comments</h2></a
+          >
+        </div>
+      </aside>
+
+      <div class="cards-section">
+        <div class="information-cards">
+          <a href="/users/users.html" class="arrow-link">
+            <span class="arrow-square">
+              <img src="/images/arrow.png" alt="an arrow" class="arrow-icon" />
+            </span>
+          </a>
+          <div class="menu-title-card">
+            <img
+              class="menu-icon-card menu-icon"
+              src="/images/users.png "
+              alt="dashboard Icon"
+            />
+            <h2 class="menu-title-in-card">All Users</h2>
+            <div class="total-count">
+              <h1 class="orange-big-text">543k</h1>
+            </div>
+          </div>
+        </div>
+        <div class="information-cards">
+          <a href="/users/projects.html" class="arrow-link">
+            <span class="arrow-square">
+              <img src="/images/arrow.png" alt="an arrow" class="arrow-icon" />
+            </span>
+          </a>
+          <div class="menu-title-card">
+            <img
+              class="menu-icon-card menu-icon"
+              src="/images/projects.png "
+              alt="Project Icon"
+            />
+            <h2 class="menu-title-in-card">Projects</h2>
+            <div class="total-count">
+              <h1 class="orange-big-text">100k</h1>
+            </div>
+          </div>
+        </div>
+        <div class="information-cards">
+          <a href="/users/articles.html" class="arrow-link">
+            <span class="arrow-square">
+              <img src="/images/arrow.png" alt="an arrow" class="arrow-icon" />
+            </span>
+          </a>
+          <div class="menu-title-card">
+            <img
+              class="menu-icon-card menu-icon"
+              src="/images/articles.png "
+              alt="Articles Icon"
+            />
+            <h2 class="menu-title-in-card">Articles</h2>
+            <div class="total-count">
+              <h1 class="orange-big-text">99k</h1>
+            </div>
+          </div>
+        </div>
+        <div class="information-cards">
+          <a href="/users/comments.html" class="arrow-link">
+            <span class="arrow-square">
+              <img src="/images/arrow.png" alt="an arrow" class="arrow-icon" />
+            </span>
+          </a>
+          <div class="menu-title-card">
+            <img
+              class="menu-icon-card menu-icon"
+              src="/images/comments.png "
+              alt="dashboard Icon"
+            />
+            <h2 class="menu-title-in-card">Comments</h2>
+            <div class="total-count">
+              <h1 class="orange-big-text">100k</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="big-card-latest-articles">
+          <marquee class="heading-latest-post"
+            >This is the Lastest post. Surely It has contributed to the
+            community so make sure post many if you feel it is noble to do
+            so.</marquee
+          >
+          <a href="/users/articles.html" class="latest-post-link">
+            <h1 class="orange-big-text post-padding">
+              MIT ENGINEERS HAVE DISCOVERED LEGO-LIKE AI CHIP
+            </h1>
+          </a>
+          <div class="post-content">
+            <div class="projects__row-img-cont">
+              <img
+                src="/images/image3.jpg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+
+            <p class="descrption">
+              necessitatibus perspiciatis, nulla placeat quisquam earum quam
+              totam similique nemo maxime vel sapiente voluptate, ullam in
+              praesentium fugiat.Corrupti, nisi? Provident voluptate et
+              distinctio! Minus, numquam commodi, eligendi dolor maxime sapiente
+              saepe provident vel placeat ex accusantium error? Vitae sint ea
+              dolores necessitatibus perspiciatis, nulla placeat quisquam earum
+              quam totam similique nemo maxime vel sapiente voluptate, ullam in
+              praesentium fugiat. Ut nobis repudiandae omnis quaerat totam<span
+                class="orange-text"
+                >...</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=================FOOTER PART STARTS HERE==============================-->
+    <%- include("./usersPartials/footer.ejs")%>
+    <!--=========================FOOTER SECTION ENDS HERE=====================-->
+    <script>
+      function accountSettings() {
+        let Setting = document.getElementById("settingid");
+        Setting.classList.add("setting");
+      }
+      function closesettings() {
+        let Setting = document.getElementById("settingid");
+        Setting.classList.remove("setting");
+      }
+    </script>
+  </body>
+</html>

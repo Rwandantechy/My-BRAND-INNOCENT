@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--===================HEAD PARTIAL INCLUDED HERE==========================================-->
+  <%- include("./partials/head.ejs") %>
+  <body>
+     <!--=====================HEADER SECTION STARTS HERE =====================================-->
+    <%- include("./partials/header.ejs") %>
+    <!--==================HEADER SECTION ENDS HERE=========================================-->
+
+
+    <!--========================SIGN IN SECTION============================================-->
+    <section class="sign-content">
+      <div class="left-division">
+        <img
+          src="/images/WELCOMEIMAGE.svg"
+          alt="Welcome image"
+          class="Welcome-image"
+        />
+      </div>
+      <div class="right-division">
+        <div class="signin-header">
+          <h2 class="title1">SIGN IN WITH</h2>
+          <span class="sign-in__socials">
+            <a
+              href="https://facebook.com/in/rwandantechy"
+              class="sign-in__social-icon-link"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                src="images/github.svg"
+                alt="facebook logo"
+                width="64"
+                height="64"
+                class="sign-in__social-icon"
+              />
+            </a>
+          </span>
+          <span class="sign-in__socials">
+            <a
+              href="https://facebook.com/in/rwandantechy"
+              class="sign-in__social-icon-link"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                src="images/twitter.svg"
+                alt="twitter logo"
+                class="sign-in__social-icon"
+              />
+            </a>
+          </span>
+          <span class="sign-in__socials">
+            <a
+              href="https://facebook.com/in/rwandantechy"
+              class="sign-in__social-icon-link"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                src="images/linkedin.svg"
+                alt="linkedin logo"
+                class="sign-in__social-icon"
+              />
+            </a>
+          </span>
+        </div>
+        <span class="orcrossingborder">or</span>
+        <!-- sign in form secction starts here -->
+        <div class="contact__form-container">
+          <form
+            action="/users/index.html"
+            class="sign-in form__form"
+            method="post"
+          >
+            <input type="hidden" name="form-name" value="form-signin" />
+            <div class="contact__form-field">
+              <input
+                required
+                type="email"
+                class="contact__form-input"
+                placeholder="Email Address"
+                name="emailaddress"
+                id="email"
+              />
+            </div>
+            <div class="contact__form-field">
+              <input
+                required
+                type="password"
+                class="contact__form-input"
+                placeholder="password"
+                name="password"
+                id="password"
+              />
+            </div>
+            <div class="checkboxremember-me">
+              <div class="one-component">
+                <input type="checkbox" value="lsRememberMe" id="rememberMe" />
+                <label for="rememberMe"><h2>Remember me</h2></label>
+              </div>
+              <span class="forgotpasswordtext">
+                <a href="#">
+                  <h2 class="orange-text">Forgot password?</h2>
+                </a></span
+              >
+            </div>
+            <div class="other-redirects">
+              <button type="submit" class="btn btn--theme contact__btn">
+                Submit
+              </button>
+            </div>
+            <div class="signup-redirect">
+              <h1>
+                Don't have account?
+                <span class="orange-text">
+                  <a href="sign-up.html"> SIGN UP NOW</a>
+                </span>
+              </h1>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+     <!--========================= FOOTER PART STARTS HERE ================================-->
+    <%- include("./partials/footer.ejs") %>
+     <!--========================= FOOTER PART ENDS HERE ==================================-->
+
+    <script src="/javaScript/main.js"></script>
+  </body>
+</html>

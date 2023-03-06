@@ -4,22 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <link rel="stylesheet" href="/Admin-Panel-Responsive/css/globals.css" />
-
-    <link
-      rel="stylesheet"
-      href="/Admin-Panel-Responsive/css/accountSetting.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/6938257159.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://kit.fontawesome.com/6938257159.css"
-      crossorigin="anonymous"
-    />
-
     <link rel="stylesheet" href="/css/style.css" />
 
     <link
@@ -100,7 +84,12 @@
           Expertise matters!
         </h1>
         <div class="contact__form-container">
-          <form action="#" class="contact__form" method="post">
+          <form
+            action="#"
+            id="form-create-project"
+            class="contact__form"
+            method="post"
+          >
             <input type="hidden" name="form-name" value="form 4" />
             <div class="contact__form-field fieldset-size">
               <input
@@ -109,18 +98,17 @@
                 class="contact__form-input fieldset-size"
                 placeholder="Project Title"
                 name="project-title"
-                id="p-title"
+                id="ptitle"
               />
             </div>
             <div class="contact__form-field">
-              <fieldset>
-                <input
-                  type="file"
-                  name="picture"
-                  class="contact__form-input fieldset-size"
-                  id="picture-project"
-                />
-              </fieldset>
+              <input
+                type="text"
+                name="picture"
+                placeholder="project image url"
+                class="contact__form-input fieldset-size"
+                id="pictureproject"
+              />
             </div>
             <div class="contact__form-field fieldset-size">
               <textarea
@@ -130,7 +118,7 @@
                 class="contact__form-input fieldset-size"
                 placeholder="Type here Project descrptions"
                 name="proj-descri-message"
-                id="proj-descri-message"
+                id="projdescription"
               ></textarea>
             </div>
             <div class="contact__form-field fieldset-size">

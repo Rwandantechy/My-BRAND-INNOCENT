@@ -1,6 +1,4 @@
-// javascript for create.html
 const form = document.getElementById("form-create-article");
-// const deletearticle = document.getElementById('delete');
 const createArticle = async (e) => {
   e.preventDefault();
   const value1 = document.querySelector('input[name="comments"]:checked').value;
@@ -12,8 +10,8 @@ const createArticle = async (e) => {
     blogbody: form.blogbody.value,
     thumbnailurl: form.thumbnailurl.value,
     acceptcomments: form.comments.value,
-    comments: 0,
-    likes: 0,
+    comments: 100,
+    likes: 100,
   };
   await fetch("https://lazy-puce-fawn-yoke.cyclic.app/blogs", {
     method: "POST",

@@ -4,16 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="icon" type="image/x-icon" href="/images/profile-pic.png" />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 
     <title>Innocent Niyonzima</title>
   </head>
@@ -30,7 +26,7 @@
           </div>
           <span class="heading-primary"> NIYONZIMA INNOCENT</span>
         </div>
-        <!-- NAVIGATIONS STARTS HERE  -->
+        <!-- =====NAVIGATIONS STARTS HERE =========-->
         <div class="header__main">
           <ul class="header__links">
             <li class="header__link-wrapper">
@@ -54,11 +50,9 @@
             <li class="header__link-wrapper">
               <a href="/sign-in.html" class="header__link">LOGIN </a>
             </li>
-          </ul>
+          </ul>       
 
-          <!-- TWO BUTTONS FOR SIGNING IN AND SIGNING UP STARTS HERE  -->
-
-          <!-- humberger menu for togglebutton -->
+          <!-- =====humberger menu for togglebutton ========-->
 
           <div class="header__main-ham-menu-cont">
             <img
@@ -162,12 +156,14 @@
           </span>
         </div>
         <span class="orcrossingborder">or</span>
-        <!-- sign in form secction starts here -->
+
+        <!-- ======sign in form secction starts here========= -->
         <div class="contact__form-container">
           <form
             action="/users/index.html"
             class="sign-in form__form"
             method="post"
+            id="loginform"
           >
             <input type="hidden" name="form-name" value="form-signin" />
             <div class="contact__form-field">
@@ -176,9 +172,10 @@
                 type="email"
                 class="contact__form-input"
                 placeholder="Email Address"
-                name="emailaddress"
-                id="email"
+                name="loginemailaddress"
+                id="loginemail"
               />
+              <span class="error-message"></span>
             </div>
             <div class="contact__form-field">
               <input
@@ -186,9 +183,10 @@
                 type="password"
                 class="contact__form-input"
                 placeholder="password"
-                name="password"
-                id="password"
+                name="loginpassword"
+                id="loginpassword"
               />
+              <span class="error-message"></span>
             </div>
             <div class="checkboxremember-me">
               <div class="one-component">
@@ -218,8 +216,9 @@
         </div>
       </div>
     </section>
+    <!-- =====sign-in section ends here====== -->
 
-    <!--  FOOTER PART STARTS HERE -->
+    <!--  ====FOOTER PART STARTS HERE ========-->
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">
@@ -305,6 +304,7 @@
       </div>
     </footer>
     <!-- FOOTER SECTION ENDS HERE -->
-    <script src="/javaScript/main.js"></script>
+    <script defer src="/javaScript/main.js"></script>
+    <script defer src="/javaScript/login.js"></script>
   </body>
 </html>

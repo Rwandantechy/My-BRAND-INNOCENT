@@ -1,8 +1,0 @@
-// javascript for details.html
-
-
-
-
-
-
-

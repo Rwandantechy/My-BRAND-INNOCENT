@@ -26,7 +26,7 @@
             />
           </div>
           <span class="heading-primary"> NIYONZIMA INNOCENT</span>
-        </div>        
+        </div>
         <!-- NAVIGATIONS STARTS HERE  -->
         <div class="header__main">
           <ul class="header__links">
@@ -375,9 +375,8 @@
           your comment and like it if it impresses you!
         </span>
       </h2>
-
-      <div class="blogs-section">
-        <div class="big-card-latest-articles">
+      <div id="myallpostedblogs" class="blogs-section">
+        <!-- <div class="big-card-latest-articles">
           >
           <a href="/blog1.html" class="latest-post-link">
             <h3 class="orange-big-text post-padding">
@@ -473,11 +472,10 @@
               >
             </p>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- blogs sections ends here  -->
-
     <!-- CONTACT SECTION  STARTS HERE -->
     <section id="contact-me" class="contact sec-pad dynamicBg">
       <div class="main-container">
@@ -489,16 +487,21 @@
           </span>
         </h2>
         <div class="contact__form-container">
-          <form action="#" class="contact__form" method="post">
-            <input type="hidden" name="form-name" value="form 1" />
+          <form id="sendMeMessage" class="contact__form" method="post">
+            <input
+              type="hidden"
+              name="form-name"
+              id="senderdate"
+              value="form 1"
+            />
             <div class="contact__form-field">
               <input
                 required
                 type="text"
                 class="contact__form-input"
                 placeholder="Name"
-                name="name"
-                id="name"
+                name="sendername"
+                id="sendername"
               />
             </div>
             <div class="contact__form-field">
@@ -507,8 +510,8 @@
                 type="email"
                 class="contact__form-input"
                 placeholder="Email"
-                name="email"
-                id="email"
+                name="senderemail"
+                id="senderemail"
               />
             </div>
             <div class="contact__form-field">
@@ -518,8 +521,8 @@
                 rows="10"
                 class="contact__form-input"
                 placeholder="Message"
-                name="message"
-                id="message"
+                name="sendermessage"
+                id="sendermessage"
               ></textarea>
             </div>
             <button type="submit" class="btn btn--theme contact__btn">
@@ -615,7 +618,9 @@
         </div>
       </div>
     </footer>
-    <script src="/javaScript/main.js"></script>
+    <script defer src="/javaScript/main.js"></script>
+    <script defer src="/javaScript/clientblogs.js"></script>
+    <script defer src="/javaScript/sendMessages.js"></script>
     <!-- FOOTER SECTION ENDS HERE -->
   </body>
 </html>
